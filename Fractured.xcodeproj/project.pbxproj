@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		596987081F4268F900C35BC8 /* ashley.brocket 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 596987071F4268F900C35BC8 /* ashley.brocket 1.png */; };
+		5969870A1F42693A00C35BC8 /* OP presents II.png in Resources */ = {isa = PBXBuildFile; fileRef = 596987091F42693A00C35BC8 /* OP presents II.png */; };
+		5969873F1F426DC900C35BC8 /* [0011] low 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969870C1F426DC900C35BC8 /* [0011] low 2.wav */; };
+		596987401F426DC900C35BC8 /* [0011] low 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969870D1F426DC900C35BC8 /* [0011] low 3.wav */; };
+		596987411F426DC900C35BC8 /* [0011] low 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969870E1F426DC900C35BC8 /* [0011] low 4.wav */; };
+		596987421F426DC900C35BC8 /* [0011] low 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969870F1F426DC900C35BC8 /* [0011] low 5.wav */; };
+		596987431F426DC900C35BC8 /* [0011] low 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987101F426DC900C35BC8 /* [0011] low 6.wav */; };
+		596987441F426DC900C35BC8 /* [0011] low 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987111F426DC900C35BC8 /* [0011] low 7.wav */; };
+		596987451F426DC900C35BC8 /* [0011] low 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987121F426DC900C35BC8 /* [0011] low 8.wav */; };
+		596987461F426DC900C35BC8 /* [0011] low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987131F426DC900C35BC8 /* [0011] low.wav */; };
+		596987471F426DC900C35BC8 /* Block Swap 2 [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987141F426DC900C35BC8 /* Block Swap 2 [1101].wav */; };
+		596987481F426DC900C35BC8 /* Block Swap [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987151F426DC900C35BC8 /* Block Swap [0100].wav */; };
+		596987491F426DC900C35BC8 /* Convolved [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987161F426DC900C35BC8 /* Convolved [0101].wav */; };
+		5969874A1F426DC900C35BC8 /* Fracture 1 high sparse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987171F426DC900C35BC8 /* Fracture 1 high sparse.wav */; };
+		5969874B1F426DC900C35BC8 /* Fractured [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987181F426DC900C35BC8 /* Fractured [1100].wav */; };
+		5969874C1F426DC900C35BC8 /* High 1 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987191F426DC900C35BC8 /* High 1 [0110].wav */; };
+		5969874D1F426DC900C35BC8 /* High 2 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871A1F426DC900C35BC8 /* High 2 [0110].wav */; };
+		5969874E1F426DC900C35BC8 /* High 3 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871B1F426DC900C35BC8 /* High 3 [0110].wav */; };
+		5969874F1F426DC900C35BC8 /* High 4 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871C1F426DC900C35BC8 /* High 4 [0110].wav */; };
+		596987501F426DC900C35BC8 /* High 5 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871D1F426DC900C35BC8 /* High 5 [0110].wav */; };
+		596987511F426DC900C35BC8 /* High 6 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871E1F426DC900C35BC8 /* High 6 [0110].wav */; };
+		596987521F426DC900C35BC8 /* High Noise Cloud 2 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969871F1F426DC900C35BC8 /* High Noise Cloud 2 [0110].wav */; };
+		596987531F426DC900C35BC8 /* High Noise Cloud 3 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987201F426DC900C35BC8 /* High Noise Cloud 3 [0110].wav */; };
+		596987541F426DC900C35BC8 /* High Noise Cloud [1110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987211F426DC900C35BC8 /* High Noise Cloud [1110].wav */; };
+		596987551F426DC900C35BC8 /* High Pitch Cloud 2 [1110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987221F426DC900C35BC8 /* High Pitch Cloud 2 [1110].wav */; };
+		596987561F426DC900C35BC8 /* High Pitch Cloud 3 [1110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987231F426DC900C35BC8 /* High Pitch Cloud 3 [1110].wav */; };
+		596987571F426DC900C35BC8 /* High Pitch Cloud 4 [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987241F426DC900C35BC8 /* High Pitch Cloud 4 [0110].wav */; };
+		596987581F426DC900C35BC8 /* High Pitch Cloud [0110].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987251F426DC900C35BC8 /* High Pitch Cloud [0110].wav */; };
+		596987591F426DC900C35BC8 /* Metallic 2 [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987261F426DC900C35BC8 /* Metallic 2 [0100].wav */; };
+		5969875A1F426DC900C35BC8 /* Metallic [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987271F426DC900C35BC8 /* Metallic [0100].wav */; };
+		5969875B1F426DC900C35BC8 /* Mid Range 1 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987281F426DC900C35BC8 /* Mid Range 1 [0101].wav */; };
+		5969875C1F426DC900C35BC8 /* Mid Range 2 [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987291F426DC900C35BC8 /* Mid Range 2 [0100].wav */; };
+		5969875D1F426DC900C35BC8 /* Mid Range 3 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872A1F426DC900C35BC8 /* Mid Range 3 [0101].wav */; };
+		5969875E1F426DC900C35BC8 /* Mid Range 4 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872B1F426DC900C35BC8 /* Mid Range 4 [0101].wav */; };
+		5969875F1F426DC900C35BC8 /* Mirrored [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872C1F426DC900C35BC8 /* Mirrored [0101].wav */; };
+		596987601F426DC900C35BC8 /* Pitch [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872D1F426DC900C35BC8 /* Pitch [1100].wav */; };
+		596987611F426DC900C35BC8 /* pn convolve 1 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872E1F426DC900C35BC8 /* pn convolve 1 [0101].wav */; };
+		596987621F426DC900C35BC8 /* pn convolve 2 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969872F1F426DC900C35BC8 /* pn convolve 2 [0101].wav */; };
+		596987631F426DC900C35BC8 /* pn convolve 3 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987301F426DC900C35BC8 /* pn convolve 3 [0101].wav */; };
+		596987641F426DC900C35BC8 /* pn convolve [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987311F426DC900C35BC8 /* pn convolve [1101].wav */; };
+		596987651F426DC900C35BC8 /* Straigh Tone Stretched 2 [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987321F426DC900C35BC8 /* Straigh Tone Stretched 2 [1100].wav */; };
+		596987661F426DC900C35BC8 /* Straight Tone 2 [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987331F426DC900C35BC8 /* Straight Tone 2 [0100].wav */; };
+		596987671F426DC900C35BC8 /* Straight Tone Stretched 3 [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987341F426DC900C35BC8 /* Straight Tone Stretched 3 [1101].wav */; };
+		596987681F426DC900C35BC8 /* Straight Tone Stretched 4 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987351F426DC900C35BC8 /* Straight Tone Stretched 4 [0101].wav */; };
+		596987691F426DC900C35BC8 /* Straight Tone Stretched 5 [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987361F426DC900C35BC8 /* Straight Tone Stretched 5 [1101].wav */; };
+		5969876A1F426DC900C35BC8 /* Straight Tone-Block Swap [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987371F426DC900C35BC8 /* Straight Tone-Block Swap [1100].wav */; };
+		5969876B1F426DC900C35BC8 /* Threshold 2 [0101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987381F426DC900C35BC8 /* Threshold 2 [0101].wav */; };
+		5969876C1F426DC900C35BC8 /* Threshold 3 [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 596987391F426DC900C35BC8 /* Threshold 3 [1100].wav */; };
+		5969876D1F426DC900C35BC8 /* Threshold 4 [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969873A1F426DC900C35BC8 /* Threshold 4 [1101].wav */; };
+		5969876E1F426DC900C35BC8 /* Threshold 5 [1100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969873B1F426DC900C35BC8 /* Threshold 5 [1100].wav */; };
+		5969876F1F426DC900C35BC8 /* Threshold 6 [0100].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969873C1F426DC900C35BC8 /* Threshold 6 [0100].wav */; };
+		596987701F426DC900C35BC8 /* Threshold 7 [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969873D1F426DC900C35BC8 /* Threshold 7 [1101].wav */; };
+		596987711F426DC900C35BC8 /* Threshold [1101].wav in Resources */ = {isa = PBXBuildFile; fileRef = 5969873E1F426DC900C35BC8 /* Threshold [1101].wav */; };
+		596987751F42700800C35BC8 /* Bass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987741F42700800C35BC8 /* Bass.swift */; };
+		596987771F42702C00C35BC8 /* Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987761F42702C00C35BC8 /* Mid.swift */; };
+		596987791F42703C00C35BC8 /* Treble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987781F42703C00C35BC8 /* Treble.swift */; };
+		5969877D1F4275A100C35BC8 /* fullSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969877C1F4275A100C35BC8 /* fullSpectrum.swift */; };
+		5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969877E1F4275CA00C35BC8 /* allUpper.swift */; };
+		59D6BD841F312F59003B2065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BD831F312F59003B2065 /* AppDelegate.swift */; };
+		59D6BD861F312F59003B2065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BD851F312F59003B2065 /* ViewController.swift */; };
+		59D6BD891F312F59003B2065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D6BD871F312F59003B2065 /* Main.storyboard */; };
+		59D6BD8B1F312F59003B2065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D6BD8A1F312F59003B2065 /* Assets.xcassets */; };
+		59D6BD8E1F312F59003B2065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D6BD8C1F312F59003B2065 /* LaunchScreen.storyboard */; };
+		59D6BD991F312F59003B2065 /* FracturedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BD981F312F59003B2065 /* FracturedTests.swift */; };
+		59D6BDA41F312F5A003B2065 /* FracturedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BDA31F312F5A003B2065 /* FracturedUITests.swift */; };
+		59D6BDB21F313016003B2065 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6BDB11F313016003B2065 /* AudioKit.framework */; };
+		59D6BDB31F313016003B2065 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6BDB11F313016003B2065 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59D6BD951F312F59003B2065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D6BD781F312F59003B2065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D6BD7F1F312F59003B2065;
+			remoteInfo = Fractured;
+		};
+		59D6BDA01F312F59003B2065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D6BD781F312F59003B2065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D6BD7F1F312F59003B2065;
+			remoteInfo = Fractured;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59D6BDB41F313016003B2065 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				59D6BDB31F313016003B2065 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		596987071F4268F900C35BC8 /* ashley.brocket 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ashley.brocket 1.png"; path = "../../../Pictures/wetransfer-47b467/Fractures/ashley.brocket 1.png"; sourceTree = "<group>"; };
+		596987091F42693A00C35BC8 /* OP presents II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OP presents II.png"; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Xcode Projects/minichamber/Mini Chamber/OP presents II.png"; sourceTree = "<group>"; };
+		5969870C1F426DC900C35BC8 /* [0011] low 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 2.wav"; sourceTree = "<group>"; };
+		5969870D1F426DC900C35BC8 /* [0011] low 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 3.wav"; sourceTree = "<group>"; };
+		5969870E1F426DC900C35BC8 /* [0011] low 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 4.wav"; sourceTree = "<group>"; };
+		5969870F1F426DC900C35BC8 /* [0011] low 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 5.wav"; sourceTree = "<group>"; };
+		596987101F426DC900C35BC8 /* [0011] low 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 6.wav"; sourceTree = "<group>"; };
+		596987111F426DC900C35BC8 /* [0011] low 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 7.wav"; sourceTree = "<group>"; };
+		596987121F426DC900C35BC8 /* [0011] low 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low 8.wav"; sourceTree = "<group>"; };
+		596987131F426DC900C35BC8 /* [0011] low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "[0011] low.wav"; sourceTree = "<group>"; };
+		596987141F426DC900C35BC8 /* Block Swap 2 [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Block Swap 2 [1101].wav"; sourceTree = "<group>"; };
+		596987151F426DC900C35BC8 /* Block Swap [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Block Swap [0100].wav"; sourceTree = "<group>"; };
+		596987161F426DC900C35BC8 /* Convolved [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Convolved [0101].wav"; sourceTree = "<group>"; };
+		596987171F426DC900C35BC8 /* Fracture 1 high sparse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Fracture 1 high sparse.wav"; sourceTree = "<group>"; };
+		596987181F426DC900C35BC8 /* Fractured [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Fractured [1100].wav"; sourceTree = "<group>"; };
+		596987191F426DC900C35BC8 /* High 1 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 1 [0110].wav"; sourceTree = "<group>"; };
+		5969871A1F426DC900C35BC8 /* High 2 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 2 [0110].wav"; sourceTree = "<group>"; };
+		5969871B1F426DC900C35BC8 /* High 3 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 3 [0110].wav"; sourceTree = "<group>"; };
+		5969871C1F426DC900C35BC8 /* High 4 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 4 [0110].wav"; sourceTree = "<group>"; };
+		5969871D1F426DC900C35BC8 /* High 5 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 5 [0110].wav"; sourceTree = "<group>"; };
+		5969871E1F426DC900C35BC8 /* High 6 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High 6 [0110].wav"; sourceTree = "<group>"; };
+		5969871F1F426DC900C35BC8 /* High Noise Cloud 2 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Noise Cloud 2 [0110].wav"; sourceTree = "<group>"; };
+		596987201F426DC900C35BC8 /* High Noise Cloud 3 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Noise Cloud 3 [0110].wav"; sourceTree = "<group>"; };
+		596987211F426DC900C35BC8 /* High Noise Cloud [1110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Noise Cloud [1110].wav"; sourceTree = "<group>"; };
+		596987221F426DC900C35BC8 /* High Pitch Cloud 2 [1110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Pitch Cloud 2 [1110].wav"; sourceTree = "<group>"; };
+		596987231F426DC900C35BC8 /* High Pitch Cloud 3 [1110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Pitch Cloud 3 [1110].wav"; sourceTree = "<group>"; };
+		596987241F426DC900C35BC8 /* High Pitch Cloud 4 [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Pitch Cloud 4 [0110].wav"; sourceTree = "<group>"; };
+		596987251F426DC900C35BC8 /* High Pitch Cloud [0110].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Pitch Cloud [0110].wav"; sourceTree = "<group>"; };
+		596987261F426DC900C35BC8 /* Metallic 2 [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Metallic 2 [0100].wav"; sourceTree = "<group>"; };
+		596987271F426DC900C35BC8 /* Metallic [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Metallic [0100].wav"; sourceTree = "<group>"; };
+		596987281F426DC900C35BC8 /* Mid Range 1 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mid Range 1 [0101].wav"; sourceTree = "<group>"; };
+		596987291F426DC900C35BC8 /* Mid Range 2 [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mid Range 2 [0100].wav"; sourceTree = "<group>"; };
+		5969872A1F426DC900C35BC8 /* Mid Range 3 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mid Range 3 [0101].wav"; sourceTree = "<group>"; };
+		5969872B1F426DC900C35BC8 /* Mid Range 4 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mid Range 4 [0101].wav"; sourceTree = "<group>"; };
+		5969872C1F426DC900C35BC8 /* Mirrored [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mirrored [0101].wav"; sourceTree = "<group>"; };
+		5969872D1F426DC900C35BC8 /* Pitch [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pitch [1100].wav"; sourceTree = "<group>"; };
+		5969872E1F426DC900C35BC8 /* pn convolve 1 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pn convolve 1 [0101].wav"; sourceTree = "<group>"; };
+		5969872F1F426DC900C35BC8 /* pn convolve 2 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pn convolve 2 [0101].wav"; sourceTree = "<group>"; };
+		596987301F426DC900C35BC8 /* pn convolve 3 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pn convolve 3 [0101].wav"; sourceTree = "<group>"; };
+		596987311F426DC900C35BC8 /* pn convolve [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pn convolve [1101].wav"; sourceTree = "<group>"; };
+		596987321F426DC900C35BC8 /* Straigh Tone Stretched 2 [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straigh Tone Stretched 2 [1100].wav"; sourceTree = "<group>"; };
+		596987331F426DC900C35BC8 /* Straight Tone 2 [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straight Tone 2 [0100].wav"; sourceTree = "<group>"; };
+		596987341F426DC900C35BC8 /* Straight Tone Stretched 3 [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straight Tone Stretched 3 [1101].wav"; sourceTree = "<group>"; };
+		596987351F426DC900C35BC8 /* Straight Tone Stretched 4 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straight Tone Stretched 4 [0101].wav"; sourceTree = "<group>"; };
+		596987361F426DC900C35BC8 /* Straight Tone Stretched 5 [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straight Tone Stretched 5 [1101].wav"; sourceTree = "<group>"; };
+		596987371F426DC900C35BC8 /* Straight Tone-Block Swap [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Straight Tone-Block Swap [1100].wav"; sourceTree = "<group>"; };
+		596987381F426DC900C35BC8 /* Threshold 2 [0101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 2 [0101].wav"; sourceTree = "<group>"; };
+		596987391F426DC900C35BC8 /* Threshold 3 [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 3 [1100].wav"; sourceTree = "<group>"; };
+		5969873A1F426DC900C35BC8 /* Threshold 4 [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 4 [1101].wav"; sourceTree = "<group>"; };
+		5969873B1F426DC900C35BC8 /* Threshold 5 [1100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 5 [1100].wav"; sourceTree = "<group>"; };
+		5969873C1F426DC900C35BC8 /* Threshold 6 [0100].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 6 [0100].wav"; sourceTree = "<group>"; };
+		5969873D1F426DC900C35BC8 /* Threshold 7 [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold 7 [1101].wav"; sourceTree = "<group>"; };
+		5969873E1F426DC900C35BC8 /* Threshold [1101].wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Threshold [1101].wav"; sourceTree = "<group>"; };
+		596987741F42700800C35BC8 /* Bass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bass.swift; sourceTree = "<group>"; };
+		596987761F42702C00C35BC8 /* Mid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mid.swift; sourceTree = "<group>"; };
+		596987781F42703C00C35BC8 /* Treble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treble.swift; sourceTree = "<group>"; };
+		5969877C1F4275A100C35BC8 /* fullSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fullSpectrum.swift; sourceTree = "<group>"; };
+		5969877E1F4275CA00C35BC8 /* allUpper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUpper.swift; sourceTree = "<group>"; };
+		59D6BD801F312F59003B2065 /* Fractured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractured.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D6BD831F312F59003B2065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59D6BD851F312F59003B2065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59D6BD881F312F59003B2065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59D6BD8A1F312F59003B2065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59D6BD8D1F312F59003B2065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59D6BD8F1F312F59003B2065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D6BD941F312F59003B2065 /* FracturedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FracturedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D6BD981F312F59003B2065 /* FracturedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FracturedTests.swift; sourceTree = "<group>"; };
+		59D6BD9A1F312F59003B2065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D6BD9F1F312F59003B2065 /* FracturedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FracturedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D6BDA31F312F5A003B2065 /* FracturedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FracturedUITests.swift; sourceTree = "<group>"; };
+		59D6BDA51F312F5A003B2065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D6BDB11F313016003B2065 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59D6BD7D1F312F59003B2065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D6BDB21F313016003B2065 /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD911F312F59003B2065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD9C1F312F59003B2065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5969870B1F426DC900C35BC8 /* Normalised */ = {
+			isa = PBXGroup;
+			children = (
+				5969870C1F426DC900C35BC8 /* [0011] low 2.wav */,
+				5969870D1F426DC900C35BC8 /* [0011] low 3.wav */,
+				5969870E1F426DC900C35BC8 /* [0011] low 4.wav */,
+				5969870F1F426DC900C35BC8 /* [0011] low 5.wav */,
+				596987101F426DC900C35BC8 /* [0011] low 6.wav */,
+				596987111F426DC900C35BC8 /* [0011] low 7.wav */,
+				596987121F426DC900C35BC8 /* [0011] low 8.wav */,
+				596987131F426DC900C35BC8 /* [0011] low.wav */,
+				596987151F426DC900C35BC8 /* Block Swap [0100].wav */,
+				596987141F426DC900C35BC8 /* Block Swap 2 [1101].wav */,
+				596987161F426DC900C35BC8 /* Convolved [0101].wav */,
+				596987171F426DC900C35BC8 /* Fracture 1 high sparse.wav */,
+				596987181F426DC900C35BC8 /* Fractured [1100].wav */,
+				596987191F426DC900C35BC8 /* High 1 [0110].wav */,
+				5969871A1F426DC900C35BC8 /* High 2 [0110].wav */,
+				5969871B1F426DC900C35BC8 /* High 3 [0110].wav */,
+				5969871C1F426DC900C35BC8 /* High 4 [0110].wav */,
+				5969871D1F426DC900C35BC8 /* High 5 [0110].wav */,
+				5969871E1F426DC900C35BC8 /* High 6 [0110].wav */,
+				5969871F1F426DC900C35BC8 /* High Noise Cloud 2 [0110].wav */,
+				596987201F426DC900C35BC8 /* High Noise Cloud 3 [0110].wav */,
+				596987211F426DC900C35BC8 /* High Noise Cloud [1110].wav */,
+				596987221F426DC900C35BC8 /* High Pitch Cloud 2 [1110].wav */,
+				596987231F426DC900C35BC8 /* High Pitch Cloud 3 [1110].wav */,
+				596987241F426DC900C35BC8 /* High Pitch Cloud 4 [0110].wav */,
+				596987251F426DC900C35BC8 /* High Pitch Cloud [0110].wav */,
+				596987261F426DC900C35BC8 /* Metallic 2 [0100].wav */,
+				596987271F426DC900C35BC8 /* Metallic [0100].wav */,
+				596987281F426DC900C35BC8 /* Mid Range 1 [0101].wav */,
+				596987291F426DC900C35BC8 /* Mid Range 2 [0100].wav */,
+				5969872A1F426DC900C35BC8 /* Mid Range 3 [0101].wav */,
+				5969872B1F426DC900C35BC8 /* Mid Range 4 [0101].wav */,
+				5969872C1F426DC900C35BC8 /* Mirrored [0101].wav */,
+				5969872D1F426DC900C35BC8 /* Pitch [1100].wav */,
+				5969872E1F426DC900C35BC8 /* pn convolve 1 [0101].wav */,
+				5969872F1F426DC900C35BC8 /* pn convolve 2 [0101].wav */,
+				596987301F426DC900C35BC8 /* pn convolve 3 [0101].wav */,
+				596987311F426DC900C35BC8 /* pn convolve [1101].wav */,
+				596987321F426DC900C35BC8 /* Straigh Tone Stretched 2 [1100].wav */,
+				596987331F426DC900C35BC8 /* Straight Tone 2 [0100].wav */,
+				596987341F426DC900C35BC8 /* Straight Tone Stretched 3 [1101].wav */,
+				596987351F426DC900C35BC8 /* Straight Tone Stretched 4 [0101].wav */,
+				596987361F426DC900C35BC8 /* Straight Tone Stretched 5 [1101].wav */,
+				596987371F426DC900C35BC8 /* Straight Tone-Block Swap [1100].wav */,
+				596987381F426DC900C35BC8 /* Threshold 2 [0101].wav */,
+				596987391F426DC900C35BC8 /* Threshold 3 [1100].wav */,
+				5969873A1F426DC900C35BC8 /* Threshold 4 [1101].wav */,
+				5969873B1F426DC900C35BC8 /* Threshold 5 [1100].wav */,
+				5969873C1F426DC900C35BC8 /* Threshold 6 [0100].wav */,
+				5969873D1F426DC900C35BC8 /* Threshold 7 [1101].wav */,
+				5969873E1F426DC900C35BC8 /* Threshold [1101].wav */,
+			);
+			name = Normalised;
+			path = ../../../Music/Fractured/Normalised;
+			sourceTree = "<group>";
+		};
+		59D6BD771F312F59003B2065 = {
+			isa = PBXGroup;
+			children = (
+				5969877C1F4275A100C35BC8 /* fullSpectrum.swift */,
+				5969877E1F4275CA00C35BC8 /* allUpper.swift */,
+				596987741F42700800C35BC8 /* Bass.swift */,
+				596987761F42702C00C35BC8 /* Mid.swift */,
+				596987781F42703C00C35BC8 /* Treble.swift */,
+				59D6BDB11F313016003B2065 /* AudioKit.framework */,
+				59D6BD821F312F59003B2065 /* Fractured */,
+				59D6BD971F312F59003B2065 /* FracturedTests */,
+				59D6BDA21F312F5A003B2065 /* FracturedUITests */,
+				59D6BD811F312F59003B2065 /* Products */,
+				596987071F4268F900C35BC8 /* ashley.brocket 1.png */,
+				596987091F42693A00C35BC8 /* OP presents II.png */,
+				5969870B1F426DC900C35BC8 /* Normalised */,
+			);
+			sourceTree = "<group>";
+		};
+		59D6BD811F312F59003B2065 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59D6BD801F312F59003B2065 /* Fractured.app */,
+				59D6BD941F312F59003B2065 /* FracturedTests.xctest */,
+				59D6BD9F1F312F59003B2065 /* FracturedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59D6BD821F312F59003B2065 /* Fractured */ = {
+			isa = PBXGroup;
+			children = (
+				59D6BD831F312F59003B2065 /* AppDelegate.swift */,
+				59D6BD851F312F59003B2065 /* ViewController.swift */,
+				59D6BD871F312F59003B2065 /* Main.storyboard */,
+				59D6BD8A1F312F59003B2065 /* Assets.xcassets */,
+				59D6BD8C1F312F59003B2065 /* LaunchScreen.storyboard */,
+				59D6BD8F1F312F59003B2065 /* Info.plist */,
+			);
+			path = Fractured;
+			sourceTree = "<group>";
+		};
+		59D6BD971F312F59003B2065 /* FracturedTests */ = {
+			isa = PBXGroup;
+			children = (
+				59D6BD981F312F59003B2065 /* FracturedTests.swift */,
+				59D6BD9A1F312F59003B2065 /* Info.plist */,
+			);
+			path = FracturedTests;
+			sourceTree = "<group>";
+		};
+		59D6BDA21F312F5A003B2065 /* FracturedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59D6BDA31F312F5A003B2065 /* FracturedUITests.swift */,
+				59D6BDA51F312F5A003B2065 /* Info.plist */,
+			);
+			path = FracturedUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59D6BD7F1F312F59003B2065 /* Fractured */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D6BDA81F312F5A003B2065 /* Build configuration list for PBXNativeTarget "Fractured" */;
+			buildPhases = (
+				59D6BD7C1F312F59003B2065 /* Sources */,
+				59D6BD7D1F312F59003B2065 /* Frameworks */,
+				59D6BD7E1F312F59003B2065 /* Resources */,
+				59D6BDB41F313016003B2065 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fractured;
+			productName = Fractured;
+			productReference = 59D6BD801F312F59003B2065 /* Fractured.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59D6BD931F312F59003B2065 /* FracturedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D6BDAB1F312F5A003B2065 /* Build configuration list for PBXNativeTarget "FracturedTests" */;
+			buildPhases = (
+				59D6BD901F312F59003B2065 /* Sources */,
+				59D6BD911F312F59003B2065 /* Frameworks */,
+				59D6BD921F312F59003B2065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D6BD961F312F59003B2065 /* PBXTargetDependency */,
+			);
+			name = FracturedTests;
+			productName = FracturedTests;
+			productReference = 59D6BD941F312F59003B2065 /* FracturedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59D6BD9E1F312F59003B2065 /* FracturedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D6BDAE1F312F5A003B2065 /* Build configuration list for PBXNativeTarget "FracturedUITests" */;
+			buildPhases = (
+				59D6BD9B1F312F59003B2065 /* Sources */,
+				59D6BD9C1F312F59003B2065 /* Frameworks */,
+				59D6BD9D1F312F59003B2065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D6BDA11F312F59003B2065 /* PBXTargetDependency */,
+			);
+			name = FracturedUITests;
+			productName = FracturedUITests;
+			productReference = 59D6BD9F1F312F59003B2065 /* FracturedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59D6BD781F312F59003B2065 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Omar Peracha";
+				TargetAttributes = {
+					59D6BD7F1F312F59003B2065 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R6LL48U454;
+						ProvisioningStyle = Automatic;
+					};
+					59D6BD931F312F59003B2065 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59D6BD7F1F312F59003B2065;
+					};
+					59D6BD9E1F312F59003B2065 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59D6BD7F1F312F59003B2065;
+					};
+				};
+			};
+			buildConfigurationList = 59D6BD7B1F312F59003B2065 /* Build configuration list for PBXProject "Fractured" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59D6BD771F312F59003B2065;
+			productRefGroup = 59D6BD811F312F59003B2065 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59D6BD7F1F312F59003B2065 /* Fractured */,
+				59D6BD931F312F59003B2065 /* FracturedTests */,
+				59D6BD9E1F312F59003B2065 /* FracturedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59D6BD7E1F312F59003B2065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5969874B1F426DC900C35BC8 /* Fractured [1100].wav in Resources */,
+				596987481F426DC900C35BC8 /* Block Swap [0100].wav in Resources */,
+				596987661F426DC900C35BC8 /* Straight Tone 2 [0100].wav in Resources */,
+				5969875E1F426DC900C35BC8 /* Mid Range 4 [0101].wav in Resources */,
+				5969875F1F426DC900C35BC8 /* Mirrored [0101].wav in Resources */,
+				5969874E1F426DC900C35BC8 /* High 3 [0110].wav in Resources */,
+				5969876E1F426DC900C35BC8 /* Threshold 5 [1100].wav in Resources */,
+				596987651F426DC900C35BC8 /* Straigh Tone Stretched 2 [1100].wav in Resources */,
+				596987701F426DC900C35BC8 /* Threshold 7 [1101].wav in Resources */,
+				596987451F426DC900C35BC8 /* [0011] low 8.wav in Resources */,
+				596987461F426DC900C35BC8 /* [0011] low.wav in Resources */,
+				596987681F426DC900C35BC8 /* Straight Tone Stretched 4 [0101].wav in Resources */,
+				5969874A1F426DC900C35BC8 /* Fracture 1 high sparse.wav in Resources */,
+				5969874D1F426DC900C35BC8 /* High 2 [0110].wav in Resources */,
+				596987591F426DC900C35BC8 /* Metallic 2 [0100].wav in Resources */,
+				5969873F1F426DC900C35BC8 /* [0011] low 2.wav in Resources */,
+				596987631F426DC900C35BC8 /* pn convolve 3 [0101].wav in Resources */,
+				5969876A1F426DC900C35BC8 /* Straight Tone-Block Swap [1100].wav in Resources */,
+				59D6BD8E1F312F59003B2065 /* LaunchScreen.storyboard in Resources */,
+				596987551F426DC900C35BC8 /* High Pitch Cloud 2 [1110].wav in Resources */,
+				596987671F426DC900C35BC8 /* Straight Tone Stretched 3 [1101].wav in Resources */,
+				5969876C1F426DC900C35BC8 /* Threshold 3 [1100].wav in Resources */,
+				596987691F426DC900C35BC8 /* Straight Tone Stretched 5 [1101].wav in Resources */,
+				5969875C1F426DC900C35BC8 /* Mid Range 2 [0100].wav in Resources */,
+				5969876B1F426DC900C35BC8 /* Threshold 2 [0101].wav in Resources */,
+				596987431F426DC900C35BC8 /* [0011] low 6.wav in Resources */,
+				59D6BD8B1F312F59003B2065 /* Assets.xcassets in Resources */,
+				5969875D1F426DC900C35BC8 /* Mid Range 3 [0101].wav in Resources */,
+				596987611F426DC900C35BC8 /* pn convolve 1 [0101].wav in Resources */,
+				596987081F4268F900C35BC8 /* ashley.brocket 1.png in Resources */,
+				596987641F426DC900C35BC8 /* pn convolve [1101].wav in Resources */,
+				596987411F426DC900C35BC8 /* [0011] low 4.wav in Resources */,
+				596987711F426DC900C35BC8 /* Threshold [1101].wav in Resources */,
+				596987571F426DC900C35BC8 /* High Pitch Cloud 4 [0110].wav in Resources */,
+				596987531F426DC900C35BC8 /* High Noise Cloud 3 [0110].wav in Resources */,
+				596987601F426DC900C35BC8 /* Pitch [1100].wav in Resources */,
+				596987441F426DC900C35BC8 /* [0011] low 7.wav in Resources */,
+				596987541F426DC900C35BC8 /* High Noise Cloud [1110].wav in Resources */,
+				596987581F426DC900C35BC8 /* High Pitch Cloud [0110].wav in Resources */,
+				596987491F426DC900C35BC8 /* Convolved [0101].wav in Resources */,
+				5969874F1F426DC900C35BC8 /* High 4 [0110].wav in Resources */,
+				5969876D1F426DC900C35BC8 /* Threshold 4 [1101].wav in Resources */,
+				5969870A1F42693A00C35BC8 /* OP presents II.png in Resources */,
+				596987421F426DC900C35BC8 /* [0011] low 5.wav in Resources */,
+				59D6BD891F312F59003B2065 /* Main.storyboard in Resources */,
+				5969874C1F426DC900C35BC8 /* High 1 [0110].wav in Resources */,
+				5969875B1F426DC900C35BC8 /* Mid Range 1 [0101].wav in Resources */,
+				596987561F426DC900C35BC8 /* High Pitch Cloud 3 [1110].wav in Resources */,
+				596987501F426DC900C35BC8 /* High 5 [0110].wav in Resources */,
+				596987511F426DC900C35BC8 /* High 6 [0110].wav in Resources */,
+				5969876F1F426DC900C35BC8 /* Threshold 6 [0100].wav in Resources */,
+				596987471F426DC900C35BC8 /* Block Swap 2 [1101].wav in Resources */,
+				5969875A1F426DC900C35BC8 /* Metallic [0100].wav in Resources */,
+				596987521F426DC900C35BC8 /* High Noise Cloud 2 [0110].wav in Resources */,
+				596987621F426DC900C35BC8 /* pn convolve 2 [0101].wav in Resources */,
+				596987401F426DC900C35BC8 /* [0011] low 3.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD921F312F59003B2065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD9D1F312F59003B2065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59D6BD7C1F312F59003B2065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D6BD861F312F59003B2065 /* ViewController.swift in Sources */,
+				5969877D1F4275A100C35BC8 /* fullSpectrum.swift in Sources */,
+				59D6BD841F312F59003B2065 /* AppDelegate.swift in Sources */,
+				596987751F42700800C35BC8 /* Bass.swift in Sources */,
+				5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */,
+				596987771F42702C00C35BC8 /* Mid.swift in Sources */,
+				596987791F42703C00C35BC8 /* Treble.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD901F312F59003B2065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D6BD991F312F59003B2065 /* FracturedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D6BD9B1F312F59003B2065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D6BDA41F312F5A003B2065 /* FracturedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59D6BD961F312F59003B2065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D6BD7F1F312F59003B2065 /* Fractured */;
+			targetProxy = 59D6BD951F312F59003B2065 /* PBXContainerItemProxy */;
+		};
+		59D6BDA11F312F59003B2065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D6BD7F1F312F59003B2065 /* Fractured */;
+			targetProxy = 59D6BDA01F312F59003B2065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59D6BD871F312F59003B2065 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D6BD881F312F59003B2065 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59D6BD8C1F312F59003B2065 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D6BD8D1F312F59003B2065 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59D6BDA61F312F5A003B2065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59D6BDA71F312F5A003B2065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59D6BDA91F312F5A003B2065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6LL48U454;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Fractured/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.Fractured;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		59D6BDAA1F312F5A003B2065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6LL48U454;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Fractured/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.Fractured;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		59D6BDAC1F312F5A003B2065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FracturedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.FracturedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractured.app/Fractured";
+			};
+			name = Debug;
+		};
+		59D6BDAD1F312F5A003B2065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FracturedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.FracturedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractured.app/Fractured";
+			};
+			name = Release;
+		};
+		59D6BDAF1F312F5A003B2065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FracturedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.FracturedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fractured;
+			};
+			name = Debug;
+		};
+		59D6BDB01F312F5A003B2065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FracturedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omarperacha.FracturedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fractured;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59D6BD7B1F312F59003B2065 /* Build configuration list for PBXProject "Fractured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D6BDA61F312F5A003B2065 /* Debug */,
+				59D6BDA71F312F5A003B2065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D6BDA81F312F5A003B2065 /* Build configuration list for PBXNativeTarget "Fractured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D6BDA91F312F5A003B2065 /* Debug */,
+				59D6BDAA1F312F5A003B2065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D6BDAB1F312F5A003B2065 /* Build configuration list for PBXNativeTarget "FracturedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D6BDAC1F312F5A003B2065 /* Debug */,
+				59D6BDAD1F312F5A003B2065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D6BDAE1F312F5A003B2065 /* Build configuration list for PBXNativeTarget "FracturedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D6BDAF1F312F5A003B2065 /* Debug */,
+				59D6BDB01F312F5A003B2065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59D6BD781F312F59003B2065 /* Project object */;
+}

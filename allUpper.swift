@@ -24,8 +24,6 @@ class allUpper : NSObject{
     var file8 : AKAudioFile?
     var file9 : AKAudioFile?
     var file10 : AKAudioFile?
-    var file11 : AKAudioFile?
-    var file12 : AKAudioFile?
     
     var player1 : AKAudioPlayer?
     var player2 : AKAudioPlayer?
@@ -37,21 +35,17 @@ class allUpper : NSObject{
     var player8 : AKAudioPlayer?
     var player9 : AKAudioPlayer?
     var player10 : AKAudioPlayer?
-    var player11 : AKAudioPlayer?
-    var player12 : AKAudioPlayer?
 
     
     let options = ["Block Swap [0100].wav",
                    "Fractured [1100].wav",
                    "Metallic 2 [0100].wav",
                    "Metallic [0100].wav",
-                   "Mid Range 2 [0100].wav",
                    "Pitch [1100].wav",
                    "Straigh Tone Stretched 2 [1100].wav",
                    "Straight Tone 2 [0100].wav",
                    "Straight Tone-Block Swap [1100].wav",
                    "Threshold 3 [1100].wav",
-                   "Threshold 5 [1100].wav",
                    "Threshold 6 [0100].wav"]
     
     func prepare(){
@@ -105,16 +99,6 @@ class allUpper : NSObject{
         do {player10 = try AKAudioPlayer(file: file10!)} catch {print("player assetion error")}
         player10!.fadeInTime = 0.1
         player10!.fadeOutTime = 3
-        
-        do {file11 = try AKAudioFile(readFileName: options[10])} catch {print("file_11 assertion error")}
-        do {player11 = try AKAudioPlayer(file: file11!)} catch {print("player assetion error")}
-        player11!.fadeInTime = 0.1
-        player11!.fadeOutTime = 3
-        
-        do {file12 = try AKAudioFile(readFileName: options[11])} catch {print("file_12 assertion error")}
-        do {player12 = try AKAudioPlayer(file: file12!)} catch {print("player assetion error")}
-        player12!.fadeInTime = 0.1
-        player12!.fadeOutTime = 3
     }
     
     func choose() {
@@ -155,12 +139,6 @@ class allUpper : NSObject{
         } else if choice == 9 {
             player10!.start()
             duration = file10!.duration
-        } else if choice == 10 {
-            player11!.start()
-            duration = file11!.duration
-        } else if choice == 11 {
-            player12!.start()
-            duration = file12!.duration
         } else {print(choice)}
     }
     

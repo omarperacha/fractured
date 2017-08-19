@@ -12,6 +12,7 @@ import AudioKit
 class allUpper : NSObject{
     
     var choice = 0
+    var midi = 0
     var duration = 0.0
     
     var file1 : AKAudioFile?
@@ -25,81 +26,45 @@ class allUpper : NSObject{
     var file9 : AKAudioFile?
     var file10 : AKAudioFile?
     
-    var player1 : AKAudioPlayer?
-    var player2 : AKAudioPlayer?
-    var player3 : AKAudioPlayer?
-    var player4 : AKAudioPlayer?
-    var player5 : AKAudioPlayer?
-    var player6 : AKAudioPlayer?
-    var player7 : AKAudioPlayer?
-    var player8 : AKAudioPlayer?
-    var player9 : AKAudioPlayer?
-    var player10 : AKAudioPlayer?
+    var sampler = AKSampler()
 
     
-    let options = ["Block Swap [0100].wav",
-                   "Fractured [1100].wav",
-                   "Metallic 2 [0100].wav",
-                   "Metallic [0100].wav",
-                   "Pitch [1100].wav",
-                   "Straigh Tone Stretched 2 [1100].wav",
-                   "Straight Tone 2 [0100].wav",
-                   "Straight Tone-Block Swap [1100].wav",
-                   "Threshold 3 [1100].wav",
-                   "Threshold 6 [0100].wav"]
+    let options: Array <String> = [
+                   "Block Swap [0100] C4.m4a",
+                   "Fractured [1100] D4.m4a",
+                   "Metallic 2 [0100] E4.m4a",
+                   "Metallic [0100] F4.m4a",
+                   "Straight Tone 2 [0100] G4.m4a",
+                   "Pitch [1100] A4.m4a",
+                   "Threshold 6 [0100] B4.m4a",
+                   "Straigh Tone Stretched 2 [1100] C5.m4a",
+                   "Straight Tone-Block Swap [1100] D5.m4a",
+                   "Threshold 3 [1100] E5.m4a"]
     
     func prepare(){
         
         do {file1 = try AKAudioFile(readFileName: options[0])} catch {print("file_1 assertion error")}
-        do {player1 = try AKAudioPlayer(file: file1!)} catch {print("player assetion error")}
-        player1!.fadeInTime = 0.1
-        player1!.fadeOutTime = 3
         
         do {file2 = try AKAudioFile(readFileName: options[1])} catch {print("file_2 assertion error")}
-        do {player2 = try AKAudioPlayer(file: file2!)} catch {print("player assetion error")}
-        player2!.fadeInTime = 0.1
-        player2!.fadeOutTime = 3
         
         do {file3 = try AKAudioFile(readFileName: options[2])} catch {print("file_3 assertion error")}
-        do {player3 = try AKAudioPlayer(file: file3!)} catch {print("player assetion error")}
-        player3!.fadeInTime = 0.1
-        player3!.fadeOutTime = 3
         
         do {file4 = try AKAudioFile(readFileName: options[3])} catch {print("file_4 assertion error")}
-        do {player4 = try AKAudioPlayer(file: file4!)} catch {print("player assetion error")}
-        player4!.fadeInTime = 0.1
-        player4!.fadeOutTime = 3
         
         do {file5 = try AKAudioFile(readFileName: options[4])} catch {print("file_5 assertion error")}
-        do {player5 = try AKAudioPlayer(file: file5!)} catch {print("player assetion error")}
-        player5!.fadeInTime = 0.1
-        player5!.fadeOutTime = 3
         
         do {file6 = try AKAudioFile(readFileName: options[5])} catch {print("file_6 assertion error")}
-        do {player6 = try AKAudioPlayer(file: file6!)} catch {print("player assetion error")}
-        player6!.fadeInTime = 0.1
-        player6!.fadeOutTime = 3
         
         do {file7 = try AKAudioFile(readFileName: options[6])} catch {print("file_7 assertion error")}
-        do {player7 = try AKAudioPlayer(file: file7!)} catch {print("player assetion error")}
-        player7!.fadeInTime = 0.1
-        player7!.fadeOutTime = 3
         
         do {file8 = try AKAudioFile(readFileName: options[7])} catch {print("file_8 assertion error")}
-        do {player8 = try AKAudioPlayer(file: file8!)} catch {print("player assetion error")}
-        player8!.fadeInTime = 0.1
-        player8!.fadeOutTime = 3
         
         do {file9 = try AKAudioFile(readFileName: options[8])} catch {print("file_9 assertion error")}
-        do {player9 = try AKAudioPlayer(file: file9!)} catch {print("player assetion error")}
-        player9!.fadeInTime = 0.1
-        player9!.fadeOutTime = 3
         
         do {file10 = try AKAudioFile(readFileName: options[9])} catch {print("file_10 assertion error")}
-        do {player10 = try AKAudioPlayer(file: file10!)} catch {print("player assetion error")}
-        player10!.fadeInTime = 0.1
-        player10!.fadeOutTime = 3
-    }
+        
+        do {try sampler.loadAudioFiles([file1!, file2!, file3!, file4!, file5!, file6!, file7!, file8!, file9!, file10!])} catch {print("sampler failed to load files")}
+        }
     
     func choose() {
         let randomIndex = Int(arc4random_uniform(UInt32(options.count)))
@@ -107,39 +72,43 @@ class allUpper : NSObject{
     }
     
     func playRandom(){
+        
         choose()
         
         if choice == 0 {
-            player1!.start()
+            midi = 60
             duration = file1!.duration
         } else if choice == 1 {
-            player2!.start()
+            midi = 62
             duration = file2!.duration
         } else if choice == 2 {
-            player3!.start()
+            midi = 64
             duration = file3!.duration
         } else if choice == 3 {
-            player4!.start()
+            midi = 65
             duration = file4!.duration
         } else if choice == 4 {
-            player5!.start()
+            midi = 67
             duration = file5!.duration
         } else if choice == 5 {
-            player6!.start()
+            midi = 69
             duration = file6!.duration
         } else if choice == 6 {
-            player7!.start()
+            midi = 71
             duration = file7!.duration
         } else if choice == 7 {
-            player8!.start()
+            midi = 72
             duration = file8!.duration
         } else if choice == 8 {
-            player9!.start()
+            midi = 74
             duration = file9!.duration
         } else if choice == 9 {
-            player10!.start()
+            midi = 76
             duration = file10!.duration
         } else {print(choice)}
+        
+        sampler.play(noteNumber: MIDINoteNumber(midi), velocity: 127, channel: 0)
+        
     }
     
     

@@ -13,21 +13,15 @@ import AudioKit
 
 class ViewController : UIViewController {
     
-    
     var fs1 = fullSpectrum()
-    var fs2 = fullSpectrum()
     
     var au1 = allUpper()
-    var au2 = allUpper()
     
     var b1 = bass()
-    var b2 = bass()
     
     var m1 = mid()
-    var m2 = mid()
     
     var t1 = treble()
-    var t2 = treble()
     
     
     var fsMixer = AKMixer()
@@ -44,69 +38,51 @@ class ViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fs1.prepare()
-        fs2.prepare()
-        au1.prepare()
-        au2.prepare()
-        b1.prepare()
-        b2.prepare()
-        m1.prepare()
-        m2.prepare()
-        t1.prepare()
-        t2.prepare()
+            fs1.prepare()
+            au1.prepare()
+            b1.prepare()
+            m1.prepare()
+            t1.prepare()
         
-        fsMixer = AKMixer(
+            fsMixer = AKMixer(
             
-            fs1.player1!, fs1.player2!, fs1.player3!, fs1.player4!, fs1.player5!,fs1.player6!, fs1.player7!, fs1.player8!, fs1.player9!, fs1.player10!, fs1.player11!,
-                          
-            fs2.player6!, fs2.player7!, fs2.player8!, fs2.player9!, fs2.player10!, fs2.player11!, fs2.player1!, fs2.player2!, fs2.player3!, fs2.player4!, fs2.player5!
-        
+            fs1.sampler
         )
+        
         
         auMixer = AKMixer(
             
-            au1.player1!, au1.player2!, au1.player3!, au1.player4!, au1.player5!,au1.player6!, au1.player7!, au1.player8!, au1.player9!, au1.player10!,
-            
-            au2.player6!, au2.player7!, au2.player8!, au2.player9!, au2.player10!, au2.player1!, au2.player2!, au2.player3!, au2.player4!, au2.player5!
+            au1.sampler
             
         )
         
         bMixer = AKMixer(
-            
-            b1.player1!, b1.player2!, b1.player3!, b1.player4!, b1.player5!,
-            
-            b2.player1!, b2.player2!, b2.player3!, b2.player4!, b2.player5!
-            
+            b1.sampler
         )
         
         mMixer = AKMixer(
             
-            m1.player1!, m1.player2!, m1.player3!, m1.player4!, m1.player5!, m1.player6!,
-            m1.player7!, m1.player8!, m1.player9!, m1.player10!,
-            
-            m2.player1!, m2.player2!, m2.player3!, m2.player4!, m2.player5!,m2.player6!, m2.player7!, m2.player8!, m2.player9!, m2.player10!
+            m1.sampler
         )
         
         tMixer = AKMixer(
             
-            t1.player1!, t1.player2!, t1.player3!, t1.player4!, t1.player5!, t1.player6!, t1.player7!, t1.player8!, t1.player9!, t1.player10!,
-            
-            t2.player6!, t2.player7!, t2.player8!, t2.player9!, t2.player10!, t2.player1!, t2.player2!, t2.player3!, t2.player4!, t2.player5!
+            t1.sampler
         )
         
-        upperSplitMixer = AKMixer(mMixer, tMixer)
+        self.upperSplitMixer = AKMixer(self.mMixer, self.tMixer)
         
-        splitMixer = AKMixer(bMixer, auMixer, upperSplitMixer)
+        self.splitMixer = AKMixer(self.bMixer, self.auMixer, self.upperSplitMixer)
         
-        output = AKMixer(fsMixer, splitMixer)
+        output = AKMixer(fsMixer, self.splitMixer)
         
         AudioKit.output = output
         AudioKit.start()
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         
-        setInitalLevels()
+        self.setInitalLevels()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 60, execute: {
             
@@ -129,61 +105,61 @@ class ViewController : UIViewController {
     
     func loopfs1() {
         fs1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-3)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10)) {
             self.loopfs2()}
     }
     
     func loopfs2() {
-        fs2.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs2.duration)-3)) {
+        fs1.playRandom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10)) {
             self.loopfs1()}
     }
     
     func loopb1() {
         b1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-3)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-10)) {
             self.loopb2()}
     }
     
     func loopb2() {
-        b2.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b2.duration)-3)) {
+        b1.playRandom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-10)) {
             self.loopb1()}
     }
     
     func loopau1() {
         au1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-3)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10)) {
             self.loopau2()}
     }
     
     func loopau2() {
-        au2.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au2.duration)-3)) {
+        au1.playRandom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10)) {
             self.loopau1()}
     }
     
     func loopm1() {
         m1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-3)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-10)) {
             self.loopm2()}
     }
     
     func loopm2() {
-        m2.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m2.duration)-3)) {
+        m1.playRandom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-10)) {
             self.loopm1()}
     }
     
     func loopt1() {
         t1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-3)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-10)) {
             self.loopt2()}
     }
     
     func loopt2() {
-        t2.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t2.duration)-3)) {
+        t1.playRandom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-10)) {
             self.loopt1()}
     }
     
@@ -365,6 +341,7 @@ class ViewController : UIViewController {
         }
     }
     
+    
     func linearFade8(){
         
         //fades treble up
@@ -397,7 +374,7 @@ class ViewController : UIViewController {
             upperSplitMixer.volume = 1
         }
         
-        if number > 0.7 {
+        if number >= 0.7 {
             fsMixer.volume = 0
             splitMixer.volume = 1
             auMixer.volume = 1
@@ -417,7 +394,7 @@ class ViewController : UIViewController {
     func fadeChoice1(){
         let number = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
         
-        print("fade 1 number = \(number)")
+        print("MARK fade 1 number = \(number)")
         
         if number > 0.2 {
             fade1()
@@ -452,6 +429,7 @@ class ViewController : UIViewController {
             fade8()
         }
     }
+    
     
     
     

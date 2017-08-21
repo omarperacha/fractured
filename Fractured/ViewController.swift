@@ -13,6 +13,8 @@ import AudioKit
 
 class ViewController : UIViewController {
     
+    let Q = DispatchQueue.global()
+    
     var fs1 = fullSpectrum()
     
     var au1 = allUpper()
@@ -22,6 +24,8 @@ class ViewController : UIViewController {
     var m1 = mid()
     
     var t1 = treble()
+    
+    var decimator : AKDecimator?
     
     
     var fsMixer = AKMixer()
@@ -33,10 +37,18 @@ class ViewController : UIViewController {
     var splitMixer = AKMixer()
     var upperSplitMixer = AKMixer()
     
+    var preMixer = AKMixer()
+    
     var output = AKMixer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+            AKSettings.playbackWhileMuted = true
+        
+        xyView.layer.borderWidth = 2
+        
+        xyView.layer.borderColor = UIColor.white.cgColor
         
             fs1.prepare()
             au1.prepare()
@@ -70,11 +82,16 @@ class ViewController : UIViewController {
             t1.sampler
         )
         
-        self.upperSplitMixer = AKMixer(self.mMixer, self.tMixer)
+        upperSplitMixer = AKMixer(mMixer, tMixer)
         
-        self.splitMixer = AKMixer(self.bMixer, self.auMixer, self.upperSplitMixer)
+        splitMixer = AKMixer(bMixer, auMixer, upperSplitMixer)
         
-        output = AKMixer(fsMixer, self.splitMixer)
+        preMixer = AKMixer(fsMixer, splitMixer)
+        
+        decimator = AKDecimator(preMixer, decimation: 0, rounding: 0, mix: 0)
+        decimator!.start()
+        
+        output = AKMixer(decimator!)
         
         AudioKit.output = output
         AudioKit.start()
@@ -105,62 +122,62 @@ class ViewController : UIViewController {
     
     func loopfs1() {
         fs1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10)) {
-            self.loopfs2()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10), execute : {
+            self.loopfs2()})
     }
     
     func loopfs2() {
         fs1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10)) {
-            self.loopfs1()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.fs1.duration)-10), execute : {
+            self.loopfs1()})
     }
     
     func loopb1() {
         b1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-10)) {
-            self.loopb2()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-3), execute : {
+            self.loopb2()})
     }
     
     func loopb2() {
         b1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-10)) {
-            self.loopb1()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.b1.duration)-3), execute : {
+            self.loopb1()})
     }
     
     func loopau1() {
         au1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10)) {
-            self.loopau2()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10), execute : {
+            self.loopau2()})
     }
     
     func loopau2() {
         au1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10)) {
-            self.loopau1()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.au1.duration)-10), execute : {
+            self.loopau1()})
     }
     
     func loopm1() {
         m1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-10)) {
-            self.loopm2()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-4), execute : {
+            self.loopm2()})
     }
     
     func loopm2() {
         m1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-10)) {
-            self.loopm1()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.m1.duration)-4), execute : {
+            self.loopm1()})
     }
     
     func loopt1() {
         t1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-10)) {
-            self.loopt2()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-3), execute : {
+            self.loopt2()})
     }
     
     func loopt2() {
         t1.playRandom()
-        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-10)) {
-            self.loopt1()}
+        DispatchQueue.main.asyncAfter(deadline: .now() + ((self.t1.duration)-3), execute : {
+            self.loopt1()})
     }
     
     //MARK - fade functions//
@@ -169,18 +186,21 @@ class ViewController : UIViewController {
     
     func fade1() {
         if fsMixer.volume != 0 {
-        for _ in 0...49 {
-        linearFade1()
+        for i in 0...99 {
+            delay(i*0.03){
+                self.linearFade1()
+                print(i)}
             }
         }
     }
     
+    
     func linearFade1(){
         
         if fsMixer.volume > 0 {
-            fsMixer.volume -= 0.02
+            fsMixer.volume -= 0.01
             if splitMixer.volume < 1{
-                splitMixer.volume += 0.02}}
+                splitMixer.volume += 0.01}}
         
         if fsMixer.volume < 0 {
             fsMixer.volume = 0
@@ -193,8 +213,10 @@ class ViewController : UIViewController {
     
     func fade2() {
         if splitMixer.volume != 0 {
-            for _ in 0...49 {
-                linearFade2()
+            for i in 0...99 {
+               delay(i*0.03){
+                    self.linearFade2()
+                    print(i)}
             }
         }
     }
@@ -202,9 +224,9 @@ class ViewController : UIViewController {
     func linearFade2(){
         
         if splitMixer.volume > 0 {
-            splitMixer.volume -= 0.02
+            splitMixer.volume -= 0.01
             if fsMixer.volume < 1{
-                fsMixer.volume += 0.02}}
+                fsMixer.volume += 0.01}}
         
         if splitMixer.volume < 0 {
             splitMixer.volume = 0
@@ -218,8 +240,10 @@ class ViewController : UIViewController {
     
     func fade3() {
         if auMixer.volume != 0 {
-            for _ in 0...49 {
-                linearFade3()
+            for i in 0...99 {
+                delay(i*0.03){
+                    self.linearFade3()
+                    print(i)}
             }
         }
     }
@@ -229,9 +253,9 @@ class ViewController : UIViewController {
         //fades au down and upperSplit up
         
         if auMixer.volume > 0 {
-            auMixer.volume -= 0.02
+            auMixer.volume -= 0.01
             if upperSplitMixer.volume < 1{
-                upperSplitMixer.volume += 0.02}}
+                upperSplitMixer.volume += 0.01}}
         
         if auMixer.volume < 0 {
             auMixer.volume = 0
@@ -243,8 +267,10 @@ class ViewController : UIViewController {
     
     func fade4() {
         if upperSplitMixer.volume != 0 {
-            for _ in 0...49 {
-                linearFade4()
+            for i in 0...99 {
+                delay(i*0.03){
+                    self.linearFade4()
+                    print(i)}
             }
         }
     }
@@ -255,9 +281,9 @@ class ViewController : UIViewController {
     //fades upperSplit down and au up
         
         if upperSplitMixer.volume > 0 {
-            upperSplitMixer.volume -= 0.02
+            upperSplitMixer.volume -= 0.01
             if auMixer.volume < 1{
-                auMixer.volume += 0.02}}
+                auMixer.volume += 0.01}}
         
         if upperSplitMixer.volume < 0 {
             upperSplitMixer.volume = 0
@@ -271,8 +297,10 @@ class ViewController : UIViewController {
     
     func fade5() {
         if mMixer.volume != 0 {
-            for _ in 0...49 {
-                linearFade5()
+            for i in 0...99 {
+                delay(i*0.03){
+                    self.linearFade5()
+                    print(i)}
             }
         }
     }
@@ -282,7 +310,7 @@ class ViewController : UIViewController {
         //fades mid down
         
         if mMixer.volume > 0 {
-            mMixer.volume -= 0.02
+            mMixer.volume -= 0.01
         }
         
         if mMixer.volume < 0 {
@@ -292,8 +320,10 @@ class ViewController : UIViewController {
     
     func fade6() {
         if mMixer.volume != 1 {
-            for _ in 0...49 {
-                linearFade6()
+            for i in 0...99 {
+                delay(i*0.03){
+                    self.linearFade6()
+                    print(i)}
             }
         }
     }
@@ -303,7 +333,7 @@ class ViewController : UIViewController {
         //fades mid up
         
         if mMixer.volume < 1{
-            mMixer.volume += 0.02}
+            mMixer.volume += 0.01}
         
         if mMixer.volume > 1 {
             mMixer.volume = 1}
@@ -313,8 +343,10 @@ class ViewController : UIViewController {
     
     func fade7() {
         if tMixer.volume != 0 {
-            for _ in 0...49 {
-                linearFade7()
+            for i in 0...99 {
+                delay(i*0.03){
+                    self.linearFade7()
+                    print(i)}
             }
         }
     }
@@ -324,7 +356,7 @@ class ViewController : UIViewController {
         //fades treble down
         
         if tMixer.volume > 0 {
-            tMixer.volume -= 0.02
+            tMixer.volume -= 0.01
         }
         
         if tMixer.volume < 0 {
@@ -335,8 +367,10 @@ class ViewController : UIViewController {
     func fade8() {
         
         if tMixer.volume != 1 {
-            for _ in 0...49 {
-                linearFade8()
+            for i in 0...99 {
+               delay(i*0.03){
+                self.linearFade8()
+                    print(i)}
             }
         }
     }
@@ -347,7 +381,7 @@ class ViewController : UIViewController {
         //fades treble up
         
         if tMixer.volume < 1{
-            tMixer.volume += 0.02}
+            tMixer.volume += 0.01}
         
         if tMixer.volume > 1 {
             tMixer.volume = 1}
@@ -430,7 +464,35 @@ class ViewController : UIViewController {
         }
     }
     
+    //MARK - delay function//
     
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
+    //MARK - BUTTONS//
+    
+    @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
+        let translation = recognizer.translation(in: self.xyView)
+        if let view = recognizer.view {
+            let xCood = view.center.x + translation.x
+            let yCood = view.center.y + translation.y
+            if xCood >= 12 && xCood <= 228 && yCood >= 12 && yCood <= 228 {
+            view.center = CGPoint(x:xCood, y:yCood)
+                
+                Q.async {
+                    self.decimator!.mix = Double((xCood-120)/108)
+                    self.decimator!.decimation = Double((xCood-120)/108)
+                    self.decimator!.rounding = Double((yCood-120)/108)
+                }
+
+                }
+            }
+        recognizer.setTranslation(CGPoint.zero, in: self.xyView)
+    }
+    
+    @IBOutlet weak var xyView: UIView!
     
     
     override func didReceiveMemoryWarning() {

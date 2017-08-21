@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7CF582E5331F362DBD596B98EDFD62FDFE65CD18",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6B6A45DE482572D262C2ED318907F280F3C347F4" : 9223372036854775807,
+    "7CF582E5331F362DBD596B98EDFD62FDFE65CD18" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6309F7DF-06D2-4A7C-B967-43127F5C3E5D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6B6A45DE482572D262C2ED318907F280F3C347F4" : "..\/..\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Documents\/Xcode%20Projects\/minichamber",
+    "7CF582E5331F362DBD596B98EDFD62FDFE65CD18" : "Fractured\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Fractured",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Fractured.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/omarperacha\/minichamber",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6B6A45DE482572D262C2ED318907F280F3C347F4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/omarperacha\/fractured.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7CF582E5331F362DBD596B98EDFD62FDFE65CD18"
+    }
+  ]
+}

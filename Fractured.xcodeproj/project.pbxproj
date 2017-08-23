@@ -30,8 +30,23 @@
 		596987751F42700800C35BC8 /* Bass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987741F42700800C35BC8 /* Bass.swift */; };
 		596987771F42702C00C35BC8 /* Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987761F42702C00C35BC8 /* Mid.swift */; };
 		596987791F42703C00C35BC8 /* Treble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987781F42703C00C35BC8 /* Treble.swift */; };
-		5969877D1F4275A100C35BC8 /* fullSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969877C1F4275A100C35BC8 /* fullSpectrum.swift */; };
 		5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969877E1F4275CA00C35BC8 /* allUpper.swift */; };
+		59ABB0981F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0881F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a */; };
+		59ABB0991F4E2B82007EB338 /* Block Swap [0100] C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0891F4E2B82007EB338 /* Block Swap [0100] C4.m4a */; };
+		59ABB09A1F4E2B82007EB338 /* Fractured [1100] D4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08A1F4E2B82007EB338 /* Fractured [1100] D4.m4a */; };
+		59ABB09B1F4E2B82007EB338 /* High Noise Cloud [1110] A5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08B1F4E2B82007EB338 /* High Noise Cloud [1110] A5.m4a */; };
+		59ABB09C1F4E2B82007EB338 /* High Pitch Cloud 2 [1110] B5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08C1F4E2B82007EB338 /* High Pitch Cloud 2 [1110] B5.m4a */; };
+		59ABB09D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a */; };
+		59ABB09E1F4E2B82007EB338 /* Metallic 2 [0100] E4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08E1F4E2B82007EB338 /* Metallic 2 [0100] E4.m4a */; };
+		59ABB09F1F4E2B82007EB338 /* Metallic [0100] F4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08F1F4E2B82007EB338 /* Metallic [0100] F4.m4a */; };
+		59ABB0A01F4E2B82007EB338 /* Pitch [1100] A4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0901F4E2B82007EB338 /* Pitch [1100] A4.m4a */; };
+		59ABB0A11F4E2B82007EB338 /* pn convolve [1101] D6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0911F4E2B82007EB338 /* pn convolve [1101] D6.m4a */; };
+		59ABB0A21F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0921F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a */; };
+		59ABB0A31F4E2B82007EB338 /* Straight Tone 2 [0100] G4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0931F4E2B82007EB338 /* Straight Tone 2 [0100] G4.m4a */; };
+		59ABB0A41F4E2B82007EB338 /* Straight Tone-Block Swap [1100] D5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0941F4E2B82007EB338 /* Straight Tone-Block Swap [1100] D5.m4a */; };
+		59ABB0A51F4E2B82007EB338 /* Threshold 3 [1100] E5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0951F4E2B82007EB338 /* Threshold 3 [1100] E5.m4a */; };
+		59ABB0A61F4E2B82007EB338 /* Threshold 6 [0100] B4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0961F4E2B82007EB338 /* Threshold 6 [0100] B4.m4a */; };
+		59ABB0A71F4E2B82007EB338 /* Threshold [1101] F5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0971F4E2B82007EB338 /* Threshold [1101] F5.m4a */; };
 		59D6BD841F312F59003B2065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BD831F312F59003B2065 /* AppDelegate.swift */; };
 		59D6BD861F312F59003B2065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BD851F312F59003B2065 /* ViewController.swift */; };
 		59D6BD891F312F59003B2065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D6BD871F312F59003B2065 /* Main.storyboard */; };
@@ -46,22 +61,6 @@
 		59EA7D191F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D141F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a */; };
 		59EA7D1A1F47E5FA00CFD8E0 /* [0011] low 8 G4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D151F47E5FA00CFD8E0 /* [0011] low 8 G4.m4a */; };
 		59EA7D1B1F47E5FA00CFD8E0 /* [0011] low C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D161F47E5FA00CFD8E0 /* [0011] low C4.m4a */; };
-		59FCA4F91F49537A00EAFEC6 /* Block Swap [0100] C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4F41F49537A00EAFEC6 /* Block Swap [0100] C4.m4a */; };
-		59FCA4FA1F49537A00EAFEC6 /* Metallic 2 [0100] E4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4F51F49537A00EAFEC6 /* Metallic 2 [0100] E4.m4a */; };
-		59FCA4FB1F49537A00EAFEC6 /* Metallic [0100] F4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4F61F49537A00EAFEC6 /* Metallic [0100] F4.m4a */; };
-		59FCA4FC1F49537A00EAFEC6 /* Straight Tone 2 [0100] G4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4F71F49537A00EAFEC6 /* Straight Tone 2 [0100] G4.m4a */; };
-		59FCA4FD1F49537A00EAFEC6 /* Threshold 6 [0100] B4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4F81F49537A00EAFEC6 /* Threshold 6 [0100] B4.m4a */; };
-		59FCA50A1F49538100EAFEC6 /* Block Swap 2 [1101] C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA4FF1F49538100EAFEC6 /* Block Swap 2 [1101] C4.m4a */; };
-		59FCA50B1F49538100EAFEC6 /* Fractured [1100] D4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5001F49538100EAFEC6 /* Fractured [1100] D4.m4a */; };
-		59FCA50C1F49538100EAFEC6 /* High Noise Cloud [1110] E4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5011F49538100EAFEC6 /* High Noise Cloud [1110] E4.m4a */; };
-		59FCA50D1F49538100EAFEC6 /* High Pitch Cloud 2 [1110] F4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5021F49538100EAFEC6 /* High Pitch Cloud 2 [1110] F4.m4a */; };
-		59FCA50E1F49538100EAFEC6 /* High Pitch Cloud 3 [1110] G4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5031F49538100EAFEC6 /* High Pitch Cloud 3 [1110] G4.m4a */; };
-		59FCA50F1F49538100EAFEC6 /* Pitch [1100] A4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5041F49538100EAFEC6 /* Pitch [1100] A4.m4a */; };
-		59FCA5101F49538100EAFEC6 /* pn convolve [1101] B4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5051F49538100EAFEC6 /* pn convolve [1101] B4.m4a */; };
-		59FCA5111F49538100EAFEC6 /* Straigh Tone Stretched 2 [1100] C5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5061F49538100EAFEC6 /* Straigh Tone Stretched 2 [1100] C5.m4a */; };
-		59FCA5121F49538100EAFEC6 /* Straight Tone-Block Swap [1100] D5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5071F49538100EAFEC6 /* Straight Tone-Block Swap [1100] D5.m4a */; };
-		59FCA5131F49538100EAFEC6 /* Threshold 3 [1100] E5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5081F49538100EAFEC6 /* Threshold 3 [1100] E5.m4a */; };
-		59FCA5141F49538100EAFEC6 /* Threshold [1101] F5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59FCA5091F49538100EAFEC6 /* Threshold [1101] F5.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,8 +118,23 @@
 		596987741F42700800C35BC8 /* Bass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bass.swift; sourceTree = "<group>"; };
 		596987761F42702C00C35BC8 /* Mid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mid.swift; sourceTree = "<group>"; };
 		596987781F42703C00C35BC8 /* Treble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treble.swift; sourceTree = "<group>"; };
-		5969877C1F4275A100C35BC8 /* fullSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fullSpectrum.swift; sourceTree = "<group>"; };
 		5969877E1F4275CA00C35BC8 /* allUpper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUpper.swift; sourceTree = "<group>"; };
+		59ABB0881F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap 2 [1101] G5.m4a"; sourceTree = "<group>"; };
+		59ABB0891F4E2B82007EB338 /* Block Swap [0100] C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap [0100] C4.m4a"; sourceTree = "<group>"; };
+		59ABB08A1F4E2B82007EB338 /* Fractured [1100] D4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fractured [1100] D4.m4a"; sourceTree = "<group>"; };
+		59ABB08B1F4E2B82007EB338 /* High Noise Cloud [1110] A5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Noise Cloud [1110] A5.m4a"; sourceTree = "<group>"; };
+		59ABB08C1F4E2B82007EB338 /* High Pitch Cloud 2 [1110] B5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Pitch Cloud 2 [1110] B5.m4a"; sourceTree = "<group>"; };
+		59ABB08D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Pitch Cloud 3 [1110] C6.m4a"; sourceTree = "<group>"; };
+		59ABB08E1F4E2B82007EB338 /* Metallic 2 [0100] E4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metallic 2 [0100] E4.m4a"; sourceTree = "<group>"; };
+		59ABB08F1F4E2B82007EB338 /* Metallic [0100] F4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metallic [0100] F4.m4a"; sourceTree = "<group>"; };
+		59ABB0901F4E2B82007EB338 /* Pitch [1100] A4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pitch [1100] A4.m4a"; sourceTree = "<group>"; };
+		59ABB0911F4E2B82007EB338 /* pn convolve [1101] D6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn convolve [1101] D6.m4a"; sourceTree = "<group>"; };
+		59ABB0921F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straigh Tone Stretched 2 [1100] C5.m4a"; sourceTree = "<group>"; };
+		59ABB0931F4E2B82007EB338 /* Straight Tone 2 [0100] G4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straight Tone 2 [0100] G4.m4a"; sourceTree = "<group>"; };
+		59ABB0941F4E2B82007EB338 /* Straight Tone-Block Swap [1100] D5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straight Tone-Block Swap [1100] D5.m4a"; sourceTree = "<group>"; };
+		59ABB0951F4E2B82007EB338 /* Threshold 3 [1100] E5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold 3 [1100] E5.m4a"; sourceTree = "<group>"; };
+		59ABB0961F4E2B82007EB338 /* Threshold 6 [0100] B4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold 6 [0100] B4.m4a"; sourceTree = "<group>"; };
+		59ABB0971F4E2B82007EB338 /* Threshold [1101] F5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold [1101] F5.m4a"; sourceTree = "<group>"; };
 		59D6BD801F312F59003B2065 /* Fractured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractured.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D6BD831F312F59003B2065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D6BD851F312F59003B2065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,22 +154,6 @@
 		59EA7D141F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low 7 F4.m4a"; sourceTree = "<group>"; };
 		59EA7D151F47E5FA00CFD8E0 /* [0011] low 8 G4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low 8 G4.m4a"; sourceTree = "<group>"; };
 		59EA7D161F47E5FA00CFD8E0 /* [0011] low C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low C4.m4a"; sourceTree = "<group>"; };
-		59FCA4F41F49537A00EAFEC6 /* Block Swap [0100] C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap [0100] C4.m4a"; sourceTree = "<group>"; };
-		59FCA4F51F49537A00EAFEC6 /* Metallic 2 [0100] E4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metallic 2 [0100] E4.m4a"; sourceTree = "<group>"; };
-		59FCA4F61F49537A00EAFEC6 /* Metallic [0100] F4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metallic [0100] F4.m4a"; sourceTree = "<group>"; };
-		59FCA4F71F49537A00EAFEC6 /* Straight Tone 2 [0100] G4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straight Tone 2 [0100] G4.m4a"; sourceTree = "<group>"; };
-		59FCA4F81F49537A00EAFEC6 /* Threshold 6 [0100] B4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold 6 [0100] B4.m4a"; sourceTree = "<group>"; };
-		59FCA4FF1F49538100EAFEC6 /* Block Swap 2 [1101] C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap 2 [1101] C4.m4a"; sourceTree = "<group>"; };
-		59FCA5001F49538100EAFEC6 /* Fractured [1100] D4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fractured [1100] D4.m4a"; sourceTree = "<group>"; };
-		59FCA5011F49538100EAFEC6 /* High Noise Cloud [1110] E4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Noise Cloud [1110] E4.m4a"; sourceTree = "<group>"; };
-		59FCA5021F49538100EAFEC6 /* High Pitch Cloud 2 [1110] F4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Pitch Cloud 2 [1110] F4.m4a"; sourceTree = "<group>"; };
-		59FCA5031F49538100EAFEC6 /* High Pitch Cloud 3 [1110] G4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Pitch Cloud 3 [1110] G4.m4a"; sourceTree = "<group>"; };
-		59FCA5041F49538100EAFEC6 /* Pitch [1100] A4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pitch [1100] A4.m4a"; sourceTree = "<group>"; };
-		59FCA5051F49538100EAFEC6 /* pn convolve [1101] B4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn convolve [1101] B4.m4a"; sourceTree = "<group>"; };
-		59FCA5061F49538100EAFEC6 /* Straigh Tone Stretched 2 [1100] C5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straigh Tone Stretched 2 [1100] C5.m4a"; sourceTree = "<group>"; };
-		59FCA5071F49538100EAFEC6 /* Straight Tone-Block Swap [1100] D5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Straight Tone-Block Swap [1100] D5.m4a"; sourceTree = "<group>"; };
-		59FCA5081F49538100EAFEC6 /* Threshold 3 [1100] E5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold 3 [1100] E5.m4a"; sourceTree = "<group>"; };
-		59FCA5091F49538100EAFEC6 /* Threshold [1101] F5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Threshold [1101] F5.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,10 +215,33 @@
 			path = "../../../Music/Fractured/Normalised mp3s/t";
 			sourceTree = "<group>";
 		};
+		59ABB0871F4E2B82007EB338 /* au */ = {
+			isa = PBXGroup;
+			children = (
+				59ABB0881F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a */,
+				59ABB0891F4E2B82007EB338 /* Block Swap [0100] C4.m4a */,
+				59ABB08A1F4E2B82007EB338 /* Fractured [1100] D4.m4a */,
+				59ABB08B1F4E2B82007EB338 /* High Noise Cloud [1110] A5.m4a */,
+				59ABB08C1F4E2B82007EB338 /* High Pitch Cloud 2 [1110] B5.m4a */,
+				59ABB08D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a */,
+				59ABB08E1F4E2B82007EB338 /* Metallic 2 [0100] E4.m4a */,
+				59ABB08F1F4E2B82007EB338 /* Metallic [0100] F4.m4a */,
+				59ABB0901F4E2B82007EB338 /* Pitch [1100] A4.m4a */,
+				59ABB0911F4E2B82007EB338 /* pn convolve [1101] D6.m4a */,
+				59ABB0921F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a */,
+				59ABB0931F4E2B82007EB338 /* Straight Tone 2 [0100] G4.m4a */,
+				59ABB0941F4E2B82007EB338 /* Straight Tone-Block Swap [1100] D5.m4a */,
+				59ABB0951F4E2B82007EB338 /* Threshold 3 [1100] E5.m4a */,
+				59ABB0961F4E2B82007EB338 /* Threshold 6 [0100] B4.m4a */,
+				59ABB0971F4E2B82007EB338 /* Threshold [1101] F5.m4a */,
+			);
+			name = au;
+			path = "../../../Music/Fractured/Normalised mp3s/au";
+			sourceTree = "<group>";
+		};
 		59D6BD771F312F59003B2065 = {
 			isa = PBXGroup;
 			children = (
-				5969877C1F4275A100C35BC8 /* fullSpectrum.swift */,
 				5969877E1F4275CA00C35BC8 /* allUpper.swift */,
 				596987741F42700800C35BC8 /* Bass.swift */,
 				596987761F42702C00C35BC8 /* Mid.swift */,
@@ -233,8 +254,7 @@
 				596987071F4268F900C35BC8 /* ashley.brocket 1.png */,
 				594288DC1F4A574E00231BAB /* black-circle.png */,
 				596987091F42693A00C35BC8 /* OP presents II.png */,
-				59FCA4F31F49537A00EAFEC6 /* au */,
-				59FCA4FE1F49538100EAFEC6 /* fs */,
+				59ABB0871F4E2B82007EB338 /* au */,
 				594288B81F4A2A1D00231BAB /* m */,
 				594288C31F4A2A1D00231BAB /* t */,
 				59EA7D111F47E5FA00CFD8E0 /* b */,
@@ -293,38 +313,6 @@
 			);
 			name = b;
 			path = "../../../Music/Fractured/Normalised mp3s/b";
-			sourceTree = "<group>";
-		};
-		59FCA4F31F49537A00EAFEC6 /* au */ = {
-			isa = PBXGroup;
-			children = (
-				59FCA4F41F49537A00EAFEC6 /* Block Swap [0100] C4.m4a */,
-				59FCA4F51F49537A00EAFEC6 /* Metallic 2 [0100] E4.m4a */,
-				59FCA4F61F49537A00EAFEC6 /* Metallic [0100] F4.m4a */,
-				59FCA4F71F49537A00EAFEC6 /* Straight Tone 2 [0100] G4.m4a */,
-				59FCA4F81F49537A00EAFEC6 /* Threshold 6 [0100] B4.m4a */,
-			);
-			name = au;
-			path = "../../../Music/Fractured/Normalised mp3s/au";
-			sourceTree = "<group>";
-		};
-		59FCA4FE1F49538100EAFEC6 /* fs */ = {
-			isa = PBXGroup;
-			children = (
-				59FCA4FF1F49538100EAFEC6 /* Block Swap 2 [1101] C4.m4a */,
-				59FCA5001F49538100EAFEC6 /* Fractured [1100] D4.m4a */,
-				59FCA5011F49538100EAFEC6 /* High Noise Cloud [1110] E4.m4a */,
-				59FCA5021F49538100EAFEC6 /* High Pitch Cloud 2 [1110] F4.m4a */,
-				59FCA5031F49538100EAFEC6 /* High Pitch Cloud 3 [1110] G4.m4a */,
-				59FCA5041F49538100EAFEC6 /* Pitch [1100] A4.m4a */,
-				59FCA5051F49538100EAFEC6 /* pn convolve [1101] B4.m4a */,
-				59FCA5061F49538100EAFEC6 /* Straigh Tone Stretched 2 [1100] C5.m4a */,
-				59FCA5071F49538100EAFEC6 /* Straight Tone-Block Swap [1100] D5.m4a */,
-				59FCA5081F49538100EAFEC6 /* Threshold 3 [1100] E5.m4a */,
-				59FCA5091F49538100EAFEC6 /* Threshold [1101] F5.m4a */,
-			);
-			name = fs;
-			path = "../../../Music/Fractured/Normalised mp3s/fs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,50 +424,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FCA5111F49538100EAFEC6 /* Straigh Tone Stretched 2 [1100] C5.m4a in Resources */,
 				59EA7D181F47E5FA00CFD8E0 /* [0011] low 6 E4.m4a in Resources */,
 				59D6BD8E1F312F59003B2065 /* LaunchScreen.storyboard in Resources */,
-				59FCA5101F49538100EAFEC6 /* pn convolve [1101] B4.m4a in Resources */,
 				594288D31F4A2A1D00231BAB /* Threshold 2 [0101] D5.m4a in Resources */,
-				59FCA50C1F49538100EAFEC6 /* High Noise Cloud [1110] E4.m4a in Resources */,
 				59D6BD8B1F312F59003B2065 /* Assets.xcassets in Resources */,
 				594288D91F4A2A1D00231BAB /* High 6 [0110] C5.m4a in Resources */,
 				596987081F4268F900C35BC8 /* ashley.brocket 1.png in Resources */,
 				59EA7D171F47E5FA00CFD8E0 /* [0011] low 3 D4.m4a in Resources */,
 				594288CE1F4A2A1D00231BAB /* Mirrored [0101] F4.m4a in Resources */,
 				594288D41F4A2A1D00231BAB /* Threshold 7 [1101] E5.m4a in Resources */,
-				59FCA50D1F49538100EAFEC6 /* High Pitch Cloud 2 [1110] F4.m4a in Resources */,
-				59FCA4FC1F49537A00EAFEC6 /* Straight Tone 2 [0100] G4.m4a in Resources */,
 				5969870A1F42693A00C35BC8 /* OP presents II.png in Resources */,
-				59FCA4F91F49537A00EAFEC6 /* Block Swap [0100] C4.m4a in Resources */,
 				594288CB1F4A2A1D00231BAB /* Convolved [0101] C4.m4a in Resources */,
 				59D6BD891F312F59003B2065 /* Main.storyboard in Resources */,
+				59ABB09F1F4E2B82007EB338 /* Metallic [0100] F4.m4a in Resources */,
+				59ABB09A1F4E2B82007EB338 /* Fractured [1100] D4.m4a in Resources */,
 				59EA7D191F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a in Resources */,
-				59FCA4FA1F49537A00EAFEC6 /* Metallic 2 [0100] E4.m4a in Resources */,
 				594288D11F4A2A1D00231BAB /* pn convolve 3 [0101] B4.m4a in Resources */,
-				59FCA4FB1F49537A00EAFEC6 /* Metallic [0100] F4.m4a in Resources */,
-				59FCA5121F49538100EAFEC6 /* Straight Tone-Block Swap [1100] D5.m4a in Resources */,
 				594288DD1F4A574E00231BAB /* black-circle.png in Resources */,
 				594288D51F4A2A1D00231BAB /* Fracture 1 high sparse C4.m4a in Resources */,
-				59FCA50F1F49538100EAFEC6 /* Pitch [1100] A4.m4a in Resources */,
+				59ABB0A11F4E2B82007EB338 /* pn convolve [1101] D6.m4a in Resources */,
 				59EA7D1A1F47E5FA00CFD8E0 /* [0011] low 8 G4.m4a in Resources */,
+				59ABB09D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a in Resources */,
 				594288CF1F4A2A1D00231BAB /* pn convolve 1 [0101] G4.m4a in Resources */,
 				594288D01F4A2A1D00231BAB /* pn convolve 2 [0101] A4.m4a in Resources */,
+				59ABB0A21F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a in Resources */,
+				59ABB0A41F4E2B82007EB338 /* Straight Tone-Block Swap [1100] D5.m4a in Resources */,
+				59ABB09C1F4E2B82007EB338 /* High Pitch Cloud 2 [1110] B5.m4a in Resources */,
+				59ABB09B1F4E2B82007EB338 /* High Noise Cloud [1110] A5.m4a in Resources */,
+				59ABB0A01F4E2B82007EB338 /* Pitch [1100] A4.m4a in Resources */,
+				59ABB0981F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a in Resources */,
 				594288DB1F4A2A1D00231BAB /* High Pitch Cloud [0110] E5.m4a in Resources */,
 				59EA7D1B1F47E5FA00CFD8E0 /* [0011] low C4.m4a in Resources */,
 				594288D71F4A2A1D00231BAB /* High 2 [0110] A4.m4a in Resources */,
-				59FCA5141F49538100EAFEC6 /* Threshold [1101] F5.m4a in Resources */,
-				59FCA4FD1F49537A00EAFEC6 /* Threshold 6 [0100] B4.m4a in Resources */,
 				594288CD1F4A2A1D00231BAB /* Mid Range 4 [0101] E4.m4a in Resources */,
-				59FCA50B1F49538100EAFEC6 /* Fractured [1100] D4.m4a in Resources */,
 				594288D81F4A2A1D00231BAB /* High 5 [0110] B4.m4a in Resources */,
+				59ABB0A71F4E2B82007EB338 /* Threshold [1101] F5.m4a in Resources */,
 				594288D21F4A2A1D00231BAB /* Straight Tone Stretched 4 [0101] C5.m4a in Resources */,
 				594288DA1F4A2A1D00231BAB /* High Noise Cloud 2 [0110] D5.m4a in Resources */,
 				594288D61F4A2A1D00231BAB /* High 1 [0110] D4.m4a in Resources */,
-				59FCA50A1F49538100EAFEC6 /* Block Swap 2 [1101] C4.m4a in Resources */,
-				59FCA50E1F49538100EAFEC6 /* High Pitch Cloud 3 [1110] G4.m4a in Resources */,
-				59FCA5131F49538100EAFEC6 /* Threshold 3 [1100] E5.m4a in Resources */,
+				59ABB0991F4E2B82007EB338 /* Block Swap [0100] C4.m4a in Resources */,
+				59ABB09E1F4E2B82007EB338 /* Metallic 2 [0100] E4.m4a in Resources */,
 				594288CC1F4A2A1D00231BAB /* Mid Range 1 [0101] D4.m4a in Resources */,
+				59ABB0A31F4E2B82007EB338 /* Straight Tone 2 [0100] G4.m4a in Resources */,
+				59ABB0A61F4E2B82007EB338 /* Threshold 6 [0100] B4.m4a in Resources */,
+				59ABB0A51F4E2B82007EB338 /* Threshold 3 [1100] E5.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D6BD861F312F59003B2065 /* ViewController.swift in Sources */,
-				5969877D1F4275A100C35BC8 /* fullSpectrum.swift in Sources */,
 				59D6BD841F312F59003B2065 /* AppDelegate.swift in Sources */,
 				596987751F42700800C35BC8 /* Bass.swift in Sources */,
 				5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */,

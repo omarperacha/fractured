@@ -32,14 +32,14 @@ class treble : NSObject{
     
     let options: Array <String> = ["Fracture 1 high sparse C4.m4a",
                    "High 1 [0110] D4.m4a",
-                   "High Noise Cloud [1110] E4.m4a",
-                   "High Pitch Cloud 2 [1110] F4.m4a",
-                   "High Pitch Cloud 3 [1110] G4.m4a",
                    "High 2 [0110] A4.m4a",
                    "High 5 [0110] B4.m4a",
                    "High 6 [0110] C5.m4a",
                    "High Noise Cloud 2 [0110] D5.m4a",
-                   "High Pitch Cloud [0110] E5.m4a"]
+                   "High Pitch Cloud [0110] E5.m4a",
+                   "High Noise Cloud [1110] A5.m4a",
+                   "High Pitch Cloud 2 [1110] B5.m4a",
+                   "High Pitch Cloud 3 [1110] C6.m4a",]
     
     func prepare(){
         
@@ -81,28 +81,28 @@ class treble : NSObject{
             midi = 62
             duration = file2!.duration
         } else if choice == 2 {
-            midi = 64
+            midi = 69
             duration = file3!.duration
         } else if choice == 3 {
-            midi = 65
+            midi = 71
             duration = file4!.duration
         } else if choice == 4 {
-            midi = 67
+            midi = 72
             duration = file5!.duration
         } else if choice == 5 {
-            midi = 69
+            midi = 74
             duration = file6!.duration
         } else if choice == 6 {
-            midi = 71
+            midi = 75
             duration = file7!.duration
         } else if choice == 7 {
-            midi = 72
+            midi = 81
             duration = file8!.duration
         } else if choice == 8 {
-            midi = 74
+            midi = 83
             duration = file9!.duration
         } else if choice == 9 {
-            midi = 76
+            midi = 84
             duration = file10!.duration
         } else {print(choice)}
         

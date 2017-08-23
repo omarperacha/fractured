@@ -25,6 +25,12 @@ class allUpper : NSObject{
     var file8 : AKAudioFile?
     var file9 : AKAudioFile?
     var file10 : AKAudioFile?
+    var file11 : AKAudioFile?
+    var file12 : AKAudioFile?
+    var file13 : AKAudioFile?
+    var file14 : AKAudioFile?
+    var file15 : AKAudioFile?
+    var file16 : AKAudioFile?
     
     var sampler = AKSampler()
 
@@ -39,7 +45,13 @@ class allUpper : NSObject{
                    "Threshold 6 [0100] B4.m4a",
                    "Straigh Tone Stretched 2 [1100] C5.m4a",
                    "Straight Tone-Block Swap [1100] D5.m4a",
-                   "Threshold 3 [1100] E5.m4a"]
+                   "Threshold 3 [1100] E5.m4a",
+                   "Threshold [1101] F5.m4a",
+                   "Block Swap 2 [1101] G5.m4a",
+                   "High Noise Cloud [1110] A5.m4a",
+                   "High Pitch Cloud 2 [1110] B5.m4a",
+                   "High Pitch Cloud 3 [1110] C6.m4a",
+                   "pn convolve [1101] D6.m4a"]
     
     func prepare(){
         
@@ -63,7 +75,20 @@ class allUpper : NSObject{
         
         do {file10 = try AKAudioFile(readFileName: options[9])} catch {print("file_10 assertion error")}
         
-        do {try sampler.loadAudioFiles([file1!, file2!, file3!, file4!, file5!, file6!, file7!, file8!, file9!, file10!])} catch {print("sampler failed to load files")}
+        do {file11 = try AKAudioFile(readFileName: options[10])} catch {print("file_11 assertion error")}
+        
+        do {file12 = try AKAudioFile(readFileName: options[11])} catch {print("file_12 assertion error")}
+        
+        do {file13 = try AKAudioFile(readFileName: options[12])} catch {print("file_13 assertion error")}
+        
+        do {file14 = try AKAudioFile(readFileName: options[13])} catch {print("file_14 assertion error")}
+        
+        do {file15 = try AKAudioFile(readFileName: options[14])} catch {print("file_15 assertion error")}
+        
+        do {file16 = try AKAudioFile(readFileName: options[15])} catch {print("file_16 assertion error")}
+        
+        do {try sampler.loadAudioFiles([file1!, file2!, file3!, file4!, file5!, file6!, file7!, file8!, file9!, file10!, file11!, file12!, file13!, file14!, file15!, file16!])} catch {print("sampler failed to load files")}
+        
         }
     
     func choose() {
@@ -105,6 +130,24 @@ class allUpper : NSObject{
         } else if choice == 9 {
             midi = 76
             duration = file10!.duration
+        } else if choice == 10 {
+            midi = 77
+            duration = file11!.duration
+        } else if choice == 11 {
+            midi = 79
+            duration = file12!.duration
+        } else if choice == 12 {
+            midi = 81
+            duration = file13!.duration
+        } else if choice == 13 {
+            midi = 83
+            duration = file14!.duration
+        } else if choice == 14 {
+            midi = 84
+            duration = file15!.duration
+        } else if choice == 15 {
+            midi = 86
+            duration = file16!.duration
         } else {print(choice)}
         
         sampler.play(noteNumber: MIDINoteNumber(midi), velocity: 127, channel: 0)

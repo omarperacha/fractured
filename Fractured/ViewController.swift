@@ -23,11 +23,14 @@ class ViewController : UIViewController {
     
     var t1 = treble()
     
-    var decimator : AKDecimator?
+    //Mark - FX//
     
-    var bUpper = 1.5
-    var mUpper = 0.7
-    var tUpper = 0.8
+    var decimator : AKDecimator?
+    var fx1 : AKClipper?
+    
+    var bUpper = 1.3
+    var mUpper = 0.8
+    var tUpper = 0.92
     
     
     var auMixer = AKMixer()
@@ -42,6 +45,8 @@ class ViewController : UIViewController {
     
     var auCompressor : AKCompressor?
     var mCompressor : AKCompressor?
+    var filter : AKLowPassFilter?
+    var dryWet : AKDryWetMixer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,26 +87,37 @@ class ViewController : UIViewController {
         bMixer.volume = bUpper
         tMixer.volume = tUpper
 
-        auCompressor = AKCompressor(auMixer, threshold: -30, masterGain: -0.4)
-        auCompressor!.start()
+        auCompressor = AKCompressor(auMixer, threshold: -38, masterGain: -0.4)
         
-        mCompressor = AKCompressor(mMixer, threshold: -25)
-        mCompressor!.start()
+        mCompressor = AKCompressor(mMixer, threshold: -34, masterGain: -0.15)
         
-        upperSplitMixer = AKMixer(mCompressor!, tMixer)
+        filter = AKLowPassFilter(tMixer, cutoffFrequency: 8500)
+        
+        upperSplitMixer = AKMixer(mCompressor!, filter!)
         
         splitMixer = AKMixer(bMixer, auCompressor!, upperSplitMixer)
         
-        decimator = AKDecimator(splitMixer, decimation: 0, rounding: 0, mix: 0)
-        decimator!.start()
+        fx1 = AKClipper(splitMixer, limit: 0)
+        
+        dryWet = AKDryWetMixer(splitMixer, fx1!, balance: 0)
+        
+        decimator = AKDecimator(dryWet!, decimation: 0, rounding: 0, mix: 0)
         
         output = AKMixer(decimator!)
+        output.volume = 0
         
-        AudioKit.output = output
-        AudioKit.start()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        fx1!.start()
+        auCompressor!.start()
+        mCompressor!.start()
+        filter!.start()
+        decimator!.start()
+        
+        AudioKit.output = output
+        AudioKit.start()
         
         self.setInitalLevels()
         
@@ -371,6 +387,31 @@ class ViewController : UIViewController {
             tMixer.volume = tUpper}
     }
     
+    //Master fade at start
+    
+    func fade9() {
+        
+        if output.volume != 1 {
+            for i in 0...49 {
+                delay(i*0.01){
+                    self.linearFade9()
+                    print(self.output.volume)}
+            }
+        }
+    }
+    
+    
+    func linearFade9(){
+        
+        //fades treble up
+        
+        if output.volume < 1 {
+            output.volume += 0.02}
+        
+        if output.volume > 1 {
+            output.volume = 1}
+    }
+    
     
     //MARK - random number functions//
     
@@ -398,6 +439,7 @@ class ViewController : UIViewController {
         loopau1()
         loopm1()
         loopt1()
+        fade9()
         
         print("\(auMixer.volume), \(upperSplitMixer.volume)")
         
@@ -408,7 +450,7 @@ class ViewController : UIViewController {
         
         print("MARK fade 1 number = \(number)")
         
-        if number > 0.2 {
+        if number < 0.2 {
             fade1()
         } else {
             fade2()
@@ -460,9 +502,12 @@ class ViewController : UIViewController {
             view.center = CGPoint(x:xCood, y:yCood)
                 
                 Q.async {
-                    self.decimator!.mix = Double((xCood-120)/108)
-                    self.decimator!.decimation = Double((xCood-120)/108)
-                    self.decimator!.rounding = Double((yCood-120)/108)
+                    self.fx1!.limit = Double(0.16-(yCood-120)/810)
+                    self.dryWet!.balance = Double((120-xCood)/180)
+
+                    
+                    self.decimator!.mix = Double((yCood-120)/324)
+                    self.decimator!.decimation = Double((xCood-120)/2160)
                 }
 
                 }

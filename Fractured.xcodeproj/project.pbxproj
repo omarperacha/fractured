@@ -31,6 +31,7 @@
 		596987771F42702C00C35BC8 /* Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987761F42702C00C35BC8 /* Mid.swift */; };
 		596987791F42703C00C35BC8 /* Treble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596987781F42703C00C35BC8 /* Treble.swift */; };
 		5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969877E1F4275CA00C35BC8 /* allUpper.swift */; };
+		596B542E1F51879300421AEE /* DSC_6744.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 596B542D1F51879300421AEE /* DSC_6744.jpg */; };
 		59ABB0981F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0881F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a */; };
 		59ABB0991F4E2B82007EB338 /* Block Swap [0100] C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB0891F4E2B82007EB338 /* Block Swap [0100] C4.m4a */; };
 		59ABB09A1F4E2B82007EB338 /* Fractured [1100] D4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59ABB08A1F4E2B82007EB338 /* Fractured [1100] D4.m4a */; };
@@ -119,6 +120,7 @@
 		596987761F42702C00C35BC8 /* Mid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mid.swift; sourceTree = "<group>"; };
 		596987781F42703C00C35BC8 /* Treble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treble.swift; sourceTree = "<group>"; };
 		5969877E1F4275CA00C35BC8 /* allUpper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUpper.swift; sourceTree = "<group>"; };
+		596B542D1F51879300421AEE /* DSC_6744.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DSC_6744.jpg; path = ../../../Downloads/DSC_6744.jpg; sourceTree = "<group>"; };
 		59ABB0881F4E2B82007EB338 /* Block Swap 2 [1101] G5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap 2 [1101] G5.m4a"; sourceTree = "<group>"; };
 		59ABB0891F4E2B82007EB338 /* Block Swap [0100] C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Block Swap [0100] C4.m4a"; sourceTree = "<group>"; };
 		59ABB08A1F4E2B82007EB338 /* Fractured [1100] D4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fractured [1100] D4.m4a"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				59D6BDA21F312F5A003B2065 /* FracturedUITests */,
 				59D6BD811F312F59003B2065 /* Products */,
 				594288DC1F4A574E00231BAB /* black-circle.png */,
+				596B542D1F51879300421AEE /* DSC_6744.jpg */,
 				594C9C1F1F4F716E00A4A5C8 /* ashley.brocket 1.png */,
 				596987091F42693A00C35BC8 /* OP presents II.png */,
 				59ABB0871F4E2B82007EB338 /* au */,
@@ -444,6 +447,7 @@
 				59ABB0A11F4E2B82007EB338 /* pn convolve [1101] D6.m4a in Resources */,
 				59EA7D1A1F47E5FA00CFD8E0 /* [0011] low 8 G4.m4a in Resources */,
 				59ABB09D1F4E2B82007EB338 /* High Pitch Cloud 3 [1110] C6.m4a in Resources */,
+				596B542E1F51879300421AEE /* DSC_6744.jpg in Resources */,
 				594288CF1F4A2A1D00231BAB /* pn convolve 1 [0101] G4.m4a in Resources */,
 				594288D01F4A2A1D00231BAB /* pn convolve 2 [0101] A4.m4a in Resources */,
 				59ABB0A21F4E2B82007EB338 /* Straigh Tone Stretched 2 [1100] C5.m4a in Resources */,

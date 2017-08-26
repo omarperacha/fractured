@@ -13,7 +13,7 @@ import AudioKit
 
 class ViewController : UIViewController {
     
-    let Q = DispatchQueue.global()
+    let Q = DispatchQueue.global(qos: .userInitiated)
     
     var au1 = allUpper()
     
@@ -27,6 +27,9 @@ class ViewController : UIViewController {
     
     var decimator : AKDecimator?
     var fx1 : AKClipper?
+    var fx2: AKPhaser?
+    var fx3 : AKDelay?
+    
     
     var bUpper = 1.3
     var mUpper = 0.8
@@ -47,6 +50,7 @@ class ViewController : UIViewController {
     var mCompressor : AKCompressor?
     var filter : AKLowPassFilter?
     var dryWet : AKDryWetMixer?
+    var dryWet2: AKDryWetMixer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,7 +107,13 @@ class ViewController : UIViewController {
         
         decimator = AKDecimator(dryWet!, decimation: 0, rounding: 0, mix: 0)
         
-        output = AKMixer(decimator!)
+        fx2 = AKPhaser(decimator!)
+        
+        dryWet2 = AKDryWetMixer(decimator! ,fx2!, balance: 0)
+        
+        fx3 = AKDelay(dryWet2!, time: 0.5, feedback: 0, dryWetMix: 0)
+        
+        output = AKMixer(fx3!)
         output.volume = 0
         
     }
@@ -115,6 +125,8 @@ class ViewController : UIViewController {
         mCompressor!.start()
         filter!.start()
         decimator!.start()
+        fx2!.start()
+        fx3!.start()
         
         AudioKit.output = output
         AudioKit.start()
@@ -502,16 +514,24 @@ class ViewController : UIViewController {
             view.center = CGPoint(x:xCood, y:yCood)
                 
                 Q.async {
-                    self.fx1!.limit = Double(0.16-(yCood-120)/810)
+                    self.fx1!.limit = Double(0.15-(yCood-120)/756)
                     self.dryWet!.balance = Double((120-xCood)/180)
 
                     
                     self.decimator!.mix = Double((yCood-120)/324)
                     self.decimator!.decimation = Double((xCood-120)/2160)
+                    
+                    self.dryWet2!.balance = Double((120-yCood)/108)
+                    self.fx2!.lfoBPM = Double(60+((xCood-120)/108*300))
+                    
+                    self.fx3!.dryWetMix = Double((120-yCood)/108)
+                    self.fx3!.feedback = Double((120-xCood)/180)
+                    print("mix: \(self.fx3!.dryWetMix)")
+                    print("feedback: \(self.fx3!.feedback)")
                 }
 
-                }
             }
+        }
         recognizer.setTranslation(CGPoint.zero, in: self.xyView)
     }
     

@@ -15,6 +15,23 @@ class ViewController : UIViewController {
     
     let Q = DispatchQueue.global(qos: .userInitiated)
     
+    func audioRouteChangeListener(notification:NSNotification) {
+        let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
+        
+        switch audioRouteChangeReason {
+        case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+            AudioKit.stop()
+            reset()
+            
+        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+            AudioKit.stop()
+            reset()
+            
+        default:
+            break
+        }
+    }
+    
     var au1 = allUpper()
     
     var b1 = bass()
@@ -51,15 +68,20 @@ class ViewController : UIViewController {
     var filter : AKLowPassFilter?
     var dryWet : AKDryWetMixer?
     var dryWet2: AKDryWetMixer?
+    var dryWet3: AKDryWetMixer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         NotificationCenter.default.addObserver(self, selector: #selector(self.audioRouteChangeListener(notification:)), name: NSNotification.Name.AVAudioSessionRouteChange, object: nil)
+        
             AKSettings.playbackWhileMuted = true
         
         xyView.layer.borderWidth = 2
-        
         xyView.layer.borderColor = UIColor.white.cgColor
+        
+        myLabel.layer.borderWidth = 0.5
+        myLabel.layer.borderColor = UIColor.black.cgColor
         
             au1.prepare()
             b1.prepare()
@@ -111,9 +133,11 @@ class ViewController : UIViewController {
         
         dryWet2 = AKDryWetMixer(decimator! ,fx2!, balance: 0)
         
-        fx3 = AKDelay(dryWet2!, time: 0.5, feedback: 0, dryWetMix: 0)
+        fx3 = AKDelay(dryWet2!, time: 0.3, feedback: 0.87, lowPassCutoff: 4000, dryWetMix: 0)
         
-        output = AKMixer(fx3!)
+        dryWet3 = AKDryWetMixer(dryWet2!, fx3!, balance: 0)
+        
+        output = AKMixer(dryWet3!)
         output.volume = 0
         
     }
@@ -208,7 +232,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade1()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -232,7 +257,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade2()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -255,7 +281,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade3()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -282,7 +309,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade4()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -312,7 +340,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade5()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -335,7 +364,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade6()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -358,7 +388,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                 delay(i*0.03){
                     self.linearFade7()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -382,7 +413,8 @@ class ViewController : UIViewController {
             for i in 0...99 {
                delay(i*0.03){
                 self.linearFade8()
-                    print(i)}
+                    //print(i)
+                }
             }
         }
     }
@@ -407,7 +439,8 @@ class ViewController : UIViewController {
             for i in 0...49 {
                 delay(i*0.01){
                     self.linearFade9()
-                    print(self.output.volume)}
+                    //print(self.output.volume)
+                }
             }
         }
     }
@@ -516,18 +549,15 @@ class ViewController : UIViewController {
                 Q.async {
                     self.fx1!.limit = Double(0.15-(yCood-120)/756)
                     self.dryWet!.balance = Double((120-xCood)/180)
-
                     
                     self.decimator!.mix = Double((yCood-120)/324)
                     self.decimator!.decimation = Double((xCood-120)/2160)
                     
-                    self.dryWet2!.balance = Double((120-yCood)/108)
-                    self.fx2!.lfoBPM = Double(60+((xCood-120)/108*300))
+                    self.dryWet2!.balance = Double((xCood-120)/108)
+                    self.fx2!.lfoBPM = Double(60+((120-yCood)/108*300))
                     
-                    self.fx3!.dryWetMix = Double((120-yCood)/108)
-                    self.fx3!.feedback = Double((120-xCood)/180)
-                    print("mix: \(self.fx3!.dryWetMix)")
-                    print("feedback: \(self.fx3!.feedback)")
+                    self.dryWet3!.balance = Double((120-yCood)/108)
+                    self.fx3!.dryWetMix = Double((120-xCood)/108)
                 }
 
             }
@@ -536,6 +566,27 @@ class ViewController : UIViewController {
     }
     
     @IBOutlet weak var xyView: UIView!
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    //MARK reset
+    
+    func reset(){
+        
+        au1.prepare()
+        b1.prepare()
+        m1.prepare()
+        t1.prepare()
+        
+        AudioKit.output = output
+        AudioKit.start()
+        
+        loopb1()
+        loopau1()
+        loopm1()
+        loopt1()
+    
+    }
     
     
     override func didReceiveMemoryWarning() {

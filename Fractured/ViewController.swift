@@ -11,6 +11,8 @@
 import UIKit
 import AudioKit
 
+var loadVar = 0
+
 class ViewController : UIViewController {
     
     let Q = DispatchQueue.global(qos: .userInitiated)
@@ -49,8 +51,8 @@ class ViewController : UIViewController {
     
     
     var bUpper = 1.3
-    var mUpper = 0.8
-    var tUpper = 0.92
+    var mUpper = 0.75
+    var tUpper = 0.8
     
     
     var auMixer = AKMixer()
@@ -83,6 +85,12 @@ class ViewController : UIViewController {
         myLabel.layer.borderWidth = 0.5
         myLabel.layer.borderColor = UIColor.black.cgColor
         
+        aboutA.layer.borderWidth = 0.5
+        aboutA.layer.borderColor = UIColor.black.cgColor
+        
+        aboutF.layer.borderWidth = 0.5
+        aboutF.layer.borderColor = UIColor.white.cgColor
+        
             au1.prepare()
             b1.prepare()
             m1.prepare()
@@ -113,11 +121,11 @@ class ViewController : UIViewController {
         bMixer.volume = bUpper
         tMixer.volume = tUpper
 
-        auCompressor = AKCompressor(auMixer, threshold: -38, masterGain: -0.4)
+        auCompressor = AKCompressor(auMixer, threshold: -40, masterGain: -0.5)
         
-        mCompressor = AKCompressor(mMixer, threshold: -34, masterGain: -0.15)
+        mCompressor = AKCompressor(mMixer, threshold: -36, masterGain: -0.15)
         
-        filter = AKLowPassFilter(tMixer, cutoffFrequency: 8500)
+        filter = AKLowPassFilter(tMixer, cutoffFrequency: 7800)
         
         upperSplitMixer = AKMixer(mCompressor!, filter!)
         
@@ -143,6 +151,8 @@ class ViewController : UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        if loadVar == 0 {
         
         fx1!.start()
         auCompressor!.start()
@@ -171,7 +181,7 @@ class ViewController : UIViewController {
             
             Timer.scheduledTimer(timeInterval: 41.27, target: self, selector: #selector(ViewController.fadeChoice3), userInfo: nil, repeats: true)
         })
-        
+        }
     }
     
     //MARK - Loop functions//
@@ -568,6 +578,10 @@ class ViewController : UIViewController {
     @IBOutlet weak var xyView: UIView!
     
     @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var aboutF: UIButton!
+    
+    @IBOutlet weak var aboutA: UIButton!
     
     //MARK reset
     

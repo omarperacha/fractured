@@ -60,6 +60,8 @@
 		59D6BDA41F312F5A003B2065 /* FracturedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6BDA31F312F5A003B2065 /* FracturedUITests.swift */; };
 		59D6BDB21F313016003B2065 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6BDB11F313016003B2065 /* AudioKit.framework */; };
 		59D6BDB31F313016003B2065 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6BDB11F313016003B2065 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59E031811F5DCB6A00227C0D /* AboutFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E031801F5DCB6A00227C0D /* AboutFViewController.swift */; };
+		59E031831F5DCB8600227C0D /* AboutAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E031821F5DCB8600227C0D /* AboutAViewController.swift */; };
 		59EA7D171F47E5FA00CFD8E0 /* [0011] low 3 D4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D121F47E5FA00CFD8E0 /* [0011] low 3 D4.m4a */; };
 		59EA7D181F47E5FA00CFD8E0 /* [0011] low 6 E4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D131F47E5FA00CFD8E0 /* [0011] low 6 E4.m4a */; };
 		59EA7D191F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59EA7D141F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a */; };
@@ -157,6 +159,8 @@
 		59D6BDA31F312F5A003B2065 /* FracturedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FracturedUITests.swift; sourceTree = "<group>"; };
 		59D6BDA51F312F5A003B2065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D6BDB11F313016003B2065 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		59E031801F5DCB6A00227C0D /* AboutFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutFViewController.swift; sourceTree = "<group>"; };
+		59E031821F5DCB8600227C0D /* AboutAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAViewController.swift; sourceTree = "<group>"; };
 		59EA7D121F47E5FA00CFD8E0 /* [0011] low 3 D4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low 3 D4.m4a"; sourceTree = "<group>"; };
 		59EA7D131F47E5FA00CFD8E0 /* [0011] low 6 E4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low 6 E4.m4a"; sourceTree = "<group>"; };
 		59EA7D141F47E5FA00CFD8E0 /* [0011] low 7 F4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "[0011] low 7 F4.m4a"; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 				59D6BD831F312F59003B2065 /* AppDelegate.swift */,
 				59D6BD851F312F59003B2065 /* ViewController.swift */,
 				59D6BD871F312F59003B2065 /* Main.storyboard */,
+				59E031801F5DCB6A00227C0D /* AboutFViewController.swift */,
+				59E031821F5DCB8600227C0D /* AboutAViewController.swift */,
 				59D6BD8A1F312F59003B2065 /* Assets.xcassets */,
 				59D6BD8C1F312F59003B2065 /* LaunchScreen.storyboard */,
 				59D6BD8F1F312F59003B2065 /* Info.plist */,
@@ -539,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E031831F5DCB8600227C0D /* AboutAViewController.swift in Sources */,
 				59D6BD861F312F59003B2065 /* ViewController.swift in Sources */,
+				59E031811F5DCB6A00227C0D /* AboutFViewController.swift in Sources */,
 				59D6BD841F312F59003B2065 /* AppDelegate.swift in Sources */,
 				596987751F42700800C35BC8 /* Bass.swift in Sources */,
 				5969877F1F4275CA00C35BC8 /* allUpper.swift in Sources */,

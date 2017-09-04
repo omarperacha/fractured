@@ -11,11 +11,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lora-Bold.ttf">
-            <string>Lora-Bold</string>
+        <array key="Lora-Italic.ttf">
+            <string>Lora-Italic</string>
         </array>
     </customFonts>
     <scenes>
+        <!--AboutA View Controller-->
+        <scene sceneID="4zB-qg-kla">
+            <objects>
+                <viewController id="5rN-IH-Zia" customClass="AboutAViewController" customModule="Fractured" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Osm-hs-6Xk"/>
+                        <viewControllerLayoutGuide type="bottom" id="mmA-th-FMI"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.84999999999999998" contentMode="scaleToFill" id="JoE-0E-BNj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-UK-6FN">
+                                <rect key="frame" x="137" y="488" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Dyq-0e-O1f"/>
+                                    <constraint firstAttribute="height" constant="30" id="f88-kd-lCE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lora-Italic" family="Lora" pointSize="17"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="5rN-IH-Zia" eventType="touchUpInside" id="WVZ-G3-22v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.88" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mmA-th-FMI" firstAttribute="top" secondItem="g3m-UK-6FN" secondAttribute="bottom" constant="50" id="QPc-dN-3bC"/>
+                            <constraint firstItem="g3m-UK-6FN" firstAttribute="centerX" secondItem="JoE-0E-BNj" secondAttribute="centerX" id="qcH-VP-7jV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="g3m-UK-6FN" id="5Pn-5H-CUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmJ-Si-Uuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="136"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -32,7 +73,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3Z-BI-o3J">
-                                <rect key="frame" x="40" y="255" width="240" height="240"/>
+                                <rect key="frame" x="40" y="260.5" width="240" height="240"/>
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbG-f5-Cm3">
                                         <rect key="frame" x="108" y="108" width="24" height="24"/>
@@ -55,40 +96,120 @@
                                 </constraints>
                             </view>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-rA-tov">
-                                <rect key="frame" x="0.0" y="0.0" width="24" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="380.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="wiI-rb-2rS"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the white dot to interact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1a-YD-sOC">
-                                <rect key="frame" x="28.5" y="223" width="264" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drag the white dot to interact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1a-YD-sOC">
+                                <rect key="frame" x="40.5" y="503" width="240" height="25"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.88377568493150682" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="xx5-2t-aea"/>
+                                    <constraint firstAttribute="height" constant="25" id="xx5-2t-aea"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lora-Italic" family="Lora" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTT-sF-qBU" userLabel="about The Artists">
+                                <rect key="frame" x="40" y="93.5" width="108" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.88" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="QIE-Gx-ukS"/>
+                                    <constraint firstAttribute="height" constant="50" id="gWI-dc-0uR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">about
+The Artists</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="Lora-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="5rN-IH-Zia" kind="presentation" animates="NO" id="Jys-U7-A9w"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opO-DA-Yru">
+                                <rect key="frame" x="136" y="0.0" width="35" height="93.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Yw0-ZO-yqr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-38-IqF" userLabel="about The Artists">
+                                <rect key="frame" x="172" y="93" width="108" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HlD-gA-gNm"/>
+                                    <constraint firstAttribute="width" constant="108" id="LyI-LX-w2J"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="about">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="Lora-Italic"/>
+                                                <font key="NSOriginalFont" size="17" name="Lora-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="Lora-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Fractured</string>
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="Lora-Italic"/>
+                                                <font key="NSOriginalFont" size="17" name="Lora-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="gp2-Hi-khL" kind="presentation" animates="NO" id="LPQ-qA-GkW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BVl-P7-RmJ"/>
                             <constraint firstItem="i3Z-BI-o3J" firstAttribute="centerY" secondItem="f2b-rA-tov" secondAttribute="bottom" id="HLH-UG-LEM"/>
+                            <constraint firstItem="Cve-38-IqF" firstAttribute="top" secondItem="opO-DA-Yru" secondAttribute="bottom" id="Jrf-jH-W6h"/>
+                            <constraint firstItem="Cve-38-IqF" firstAttribute="trailing" secondItem="i3Z-BI-o3J" secondAttribute="trailing" id="RZ8-Kb-qne"/>
+                            <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="opO-DA-Yru" secondAttribute="trailing" constant="-171" id="VPw-pp-tIH"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="f2b-rA-tov" secondAttribute="leading" id="WfL-kl-xVE"/>
                             <constraint firstItem="f1a-YD-sOC" firstAttribute="centerX" secondItem="OaX-Ie-RsY" secondAttribute="centerX" id="Y2o-6P-xWX"/>
+                            <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="opO-DA-Yru" secondAttribute="top" id="YZn-GQ-8Kj"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="aIW-88-1RZ"/>
-                            <constraint firstItem="f1a-YD-sOC" firstAttribute="width" secondItem="i3Z-BI-o3J" secondAttribute="width" multiplier="1.1" id="bGb-aD-XPL"/>
+                            <constraint firstItem="f1a-YD-sOC" firstAttribute="width" secondItem="i3Z-BI-o3J" secondAttribute="width" id="bGb-aD-XPL"/>
+                            <constraint firstItem="i3Z-BI-o3J" firstAttribute="leading" secondItem="dTT-sF-qBU" secondAttribute="leading" id="d7R-vo-9ga"/>
+                            <constraint firstItem="opO-DA-Yru" firstAttribute="height" secondItem="OaX-Ie-RsY" secondAttribute="height" multiplier="0.165" id="esX-EC-ECV"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="f2b-rA-tov" secondAttribute="top" id="q0Y-sc-cyv"/>
                             <constraint firstItem="i3Z-BI-o3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYb-SE-O2K"/>
-                            <constraint firstItem="f2b-rA-tov" firstAttribute="height" secondItem="OaX-Ie-RsY" secondAttribute="height" multiplier="0.66" id="x21-WE-s8O"/>
+                            <constraint firstItem="f2b-rA-tov" firstAttribute="height" secondItem="OaX-Ie-RsY" secondAttribute="height" multiplier="0.67" id="x21-WE-s8O"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xCW-bK-Rcd"/>
+                            <constraint firstItem="dTT-sF-qBU" firstAttribute="top" secondItem="opO-DA-Yru" secondAttribute="bottom" id="xS4-eb-5gp"/>
                             <constraint firstAttribute="trailing" secondItem="OaX-Ie-RsY" secondAttribute="trailing" id="xwu-Tm-HpX"/>
-                            <constraint firstItem="i3Z-BI-o3J" firstAttribute="top" secondItem="f1a-YD-sOC" secondAttribute="bottom" constant="8" id="zUK-Ah-4at"/>
+                            <constraint firstItem="i3Z-BI-o3J" firstAttribute="bottom" secondItem="f1a-YD-sOC" secondAttribute="top" constant="-2.5" id="zUK-Ah-4at"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aboutA" destination="dTT-sF-qBU" id="uOy-ID-eUh"/>
+                        <outlet property="aboutF" destination="Cve-38-IqF" id="Ro2-YN-9gZ"/>
                         <outlet property="myLabel" destination="f1a-YD-sOC" id="0ce-GT-Pln"/>
                         <outlet property="xyView" destination="i3Z-BI-o3J" id="gMz-lX-HzJ"/>
                     </connections>
@@ -100,7 +221,48 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="135" y="138.38028169014083"/>
+            <point key="canvasLocation" x="133.125" y="137.32394366197184"/>
+        </scene>
+        <!--AboutF View Controller-->
+        <scene sceneID="bKf-iD-RxK">
+            <objects>
+                <viewController id="gp2-Hi-khL" customClass="AboutFViewController" customModule="Fractured" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nka-3A-62P"/>
+                        <viewControllerLayoutGuide type="bottom" id="ElC-ri-drR"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.84999999999999998" contentMode="scaleToFill" id="VJf-8B-EQY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-NE-dpB">
+                                <rect key="frame" x="137" y="488" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="8X8-7f-ZPW"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qbu-HS-6l7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lora-Italic" family="Lora" pointSize="17"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="gp2-Hi-khL" eventType="touchUpInside" id="wJd-sh-2TH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ElC-ri-drR" firstAttribute="top" secondItem="XhY-NE-dpB" secondAttribute="bottom" constant="50" id="OfY-ha-pVM"/>
+                            <constraint firstItem="XhY-NE-dpB" firstAttribute="centerX" secondItem="VJf-8B-EQY" secondAttribute="centerX" id="pXI-RD-1MW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="XhY-NE-dpB" id="oY8-in-tzU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnI-IY-lOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="137"/>
         </scene>
     </scenes>
     <resources>

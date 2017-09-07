@@ -14,6 +14,12 @@ class AboutFViewController: UIViewController {
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
+    
+    @IBOutlet weak var linkButton: UIButton!
+    
+    @IBAction func link(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "http://www.brocketgallery.com/august-residency/")!)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +28,10 @@ class AboutFViewController: UIViewController {
         
         backButton.layer.borderWidth = 0.5
         backButton.layer.borderColor = UIColor.white.cgColor
+        
+        linkButton.layer.borderWidth = 0.5
+        linkButton.layer.borderColor = UIColor.white.cgColor
+
 
         // Do any additional setup after loading the view.
     }

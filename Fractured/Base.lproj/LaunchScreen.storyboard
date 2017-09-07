@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OP presents II.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiw-Bn-ZRW">
-                                <rect key="frame" x="392" y="656" width="240" height="54"/>
+                                <rect key="frame" x="412" y="658" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="E6N-Ke-AHi"/>
-                                    <constraint firstAttribute="width" secondItem="wiw-Bn-ZRW" secondAttribute="height" multiplier="40:9" id="xsE-ZK-Yoe"/>
+                                    <constraint firstAttribute="width" constant="200" id="E6N-Ke-AHi"/>
+                                    <constraint firstAttribute="width" secondItem="wiw-Bn-ZRW" secondAttribute="height" multiplier="4:1" id="xsE-ZK-Yoe"/>
                                 </constraints>
                             </imageView>
                         </subviews>

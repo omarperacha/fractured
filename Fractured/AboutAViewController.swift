@@ -14,6 +14,18 @@ class AboutAViewController: UIViewController {
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
+    
+    @IBOutlet weak var opButton: UIButton!
+    
+    @IBAction func opLink(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://omarperacha.com")!)
+    }
+    
+    @IBOutlet weak var amtButton: UIButton!
+    
+    @IBAction func amtLink(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "http://www.ashleighmaythompson.com/?page_id=68")!)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +34,12 @@ class AboutAViewController: UIViewController {
         
         backButton.layer.borderWidth = 0.5
         backButton.layer.borderColor = UIColor.black.cgColor
+        
+        opButton.layer.borderWidth = 0.5
+        opButton.layer.borderColor = UIColor.black.cgColor
+        
+        amtButton.layer.borderWidth = 0.5
+        amtButton.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }

@@ -17,7 +17,7 @@ class ViewController : UIViewController {
     
     let Q = DispatchQueue.global(qos: .userInitiated)
     
-    func audioRouteChangeListener(notification:NSNotification) {
+    @objc func audioRouteChangeListener(notification:NSNotification) {
         let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
         
         switch audioRouteChangeReason {
@@ -74,6 +74,7 @@ class ViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
          NotificationCenter.default.addObserver(self, selector: #selector(self.audioRouteChangeListener(notification:)), name: NSNotification.Name.AVAudioSessionRouteChange, object: nil)
         
@@ -500,7 +501,7 @@ class ViewController : UIViewController {
         
     }
     
-    func fadeChoice1(){
+    @objc func fadeChoice1(){
         let number = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
         
         print("MARK fade 1 number = \(number)")
@@ -512,7 +513,7 @@ class ViewController : UIViewController {
         }
     }
     
-    func fadeChoice2(){
+    @objc func fadeChoice2(){
         let number = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
         
         print("fade 2 number = \(number)")
@@ -524,7 +525,7 @@ class ViewController : UIViewController {
         }
     }
     
-    func fadeChoice3(){
+    @objc func fadeChoice3(){
         let number = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
         
         print("fade 3 number = \(number)")

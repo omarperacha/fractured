@@ -23,11 +23,11 @@ class bass : NSObject {
     
     var sampler = AKSampler()
 
-    let options: Array <String> = ["[0011] low C4.m4a",
-                   "[0011] low 3 D4.m4a",
-                   "[0011] low 6 E4.m4a",
-                   "[0011] low 7 F4.m4a",
-                   "[0011] low 8 G4.m4a"]
+    let options: Array <String> = ["[0011] low C4.mp3",
+                   "[0011] low 3 D4.mp3",
+                   "[0011] low 6 E4.mp3",
+                   "[0011] low 7 F4.mp3",
+                   "[0011] low 8 G4.mp3"]
     
     func prepare(){
         

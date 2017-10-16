@@ -29,16 +29,16 @@ class mid : NSObject{
     var sampler = AKSampler()
     
     
-    let options: Array <String> = ["Convolved [0101] C4.m4a",
-                   "Mid Range 1 [0101] D4.m4a",
-                   "Mid Range 4 [0101] E4.m4a",
-                   "Mirrored [0101] F4.m4a",
-                   "pn convolve 1 [0101] G4.m4a",
-                   "pn convolve 2 [0101] A4.m4a",
-                   "pn convolve 3 [0101] B4.m4a",
-                   "Straight Tone Stretched 4 [0101] C5.m4a",
-                   "Threshold 2 [0101] D5.m4a",
-                   "Threshold 7 [1101] E5.m4a"]
+    let options: Array <String> = ["Convolved [0101] C4.mp3",
+                   "Mid Range 1 [0101] D4.mp3",
+                   "Mid Range 4 [0101] E4.mp3",
+                   "Mirrored [0101] F4.mp3",
+                   "pn convolve 1 [0101] G4.mp3",
+                   "pn convolve 2 [0101] A4 2.mp3",
+                   "pn convolve 3 [0101] B4 2.mp3",
+                   "Straight Tone Stretched 4 [0101] C5.mp3",
+                   "Threshold 2 [0101] D5.mp3",
+                   "Threshold 7 [1101] E5.mp3"]
     
     func prepare(){
         

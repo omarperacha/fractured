@@ -36,22 +36,22 @@ class allUpper : NSObject{
 
     
     let options: Array <String> = [
-                   "Block Swap [0100] C4.m4a",
-                   "Fractured [1100] D4.m4a",
-                   "Metallic 2 [0100] E4.m4a",
-                   "Metallic [0100] F4.m4a",
-                   "Straight Tone 2 [0100] G4.m4a",
-                   "Pitch [1100] A4.m4a",
-                   "Threshold 6 [0100] B4.m4a",
-                   "Straigh Tone Stretched 2 [1100] C5.m4a",
-                   "Straight Tone-Block Swap [1100] D5.m4a",
-                   "Threshold 3 [1100] E5.m4a",
-                   "Threshold [1101] F5.m4a",
-                   "Block Swap 2 [1101] G5.m4a",
-                   "High Noise Cloud [1110] A5.m4a",
-                   "High Pitch Cloud 2 [1110] B5.m4a",
-                   "High Pitch Cloud 3 [1110] C6.m4a",
-                   "pn convolve [1101] D6.m4a"]
+                   "Block Swap [0100] C4.mp3",
+                   "Fractured [1100] D4.mp3",
+                   "Metallic 2 [0100] E4.mp3",
+                   "Metallic [0100] F4.mp3",
+                   "Straight Tone 2 [0100] G4.mp3",
+                   "Pitch [1100] A4.mp3",
+                   "Threshold 6 [0100] B4.mp3",
+                   "Straigh Tone Stretched 2 [1100] C5.mp3",
+                   "Straight Tone-Block Swap [1100] D5.mp3",
+                   "Threshold 3 [1100] E5.mp3",
+                   "Threshold [1101] F5.mp3",
+                   "Block Swap 2 [1101] G5.mp3",
+                   "High Noise Cloud [1110] A5.mp3",
+                   "High Pitch Cloud 2 [1110] B5.mp3",
+                   "High Pitch Cloud 3 [1110] C6.mp3",
+                   "pn convolve [1101] D6.mp3"]
     
     func prepare(){
         

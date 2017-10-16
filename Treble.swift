@@ -30,16 +30,16 @@ class treble : NSObject{
     var sampler = AKSampler()
     
     
-    let options: Array <String> = ["Fracture 1 high sparse C4.m4a",
-                   "High 1 [0110] D4.m4a",
-                   "High 2 [0110] A4.m4a",
-                   "High 5 [0110] B4.m4a",
-                   "High 6 [0110] C5.m4a",
-                   "High Noise Cloud 2 [0110] D5.m4a",
-                   "High Pitch Cloud [0110] E5.m4a",
-                   "High Noise Cloud [1110] A5.m4a",
-                   "High Pitch Cloud 2 [1110] B5.m4a",
-                   "High Pitch Cloud 3 [1110] C6.m4a",]
+    let options: Array <String> = ["Fracture 1 high sparse C4.mp3",
+                   "High 1 [0110] D4.mp3",
+                   "High 2 [0110] A4.mp3",
+                   "High 5 [0110] B4.mp3",
+                   "High 6 [0110] C5.mp3",
+                   "High Noise Cloud 2 [0110] D5.mp3",
+                   "High Pitch Cloud [0110] E5.mp3",
+                   "High Noise Cloud [1110] A5.mp3",
+                   "High Pitch Cloud 2 [1110] B5.mp3",
+                   "High Pitch Cloud 3 [1110] C6.mp3",]
     
     func prepare(){
         

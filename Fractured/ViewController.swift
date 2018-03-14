@@ -10,10 +10,14 @@
 
 import UIKit
 import AudioKit
+import AudioKitUI
 
 var loadVar = 0
 
 class ViewController : UIViewController {
+    
+    
+    @IBOutlet weak var audioOutputPlot: EZAudioPlot!
     
     let Q = DispatchQueue.global(qos: .userInitiated)
     
@@ -78,7 +82,9 @@ class ViewController : UIViewController {
         
          NotificationCenter.default.addObserver(self, selector: #selector(self.audioRouteChangeListener(notification:)), name: NSNotification.Name.AVAudioSessionRouteChange, object: nil)
         
-            AKSettings.playbackWhileMuted = true
+        AKSettings.playbackWhileMuted = true
+        
+        AKSettings.useBluetooth = true
         
         xyView.layer.borderWidth = 2
         xyView.layer.borderColor = UIColor.white.cgColor
@@ -148,6 +154,8 @@ class ViewController : UIViewController {
         
         output = AKMixer(dryWet3!)
         output.volume = 0
+        
+        setupPlot()
         
     }
     
@@ -446,11 +454,10 @@ class ViewController : UIViewController {
     
     func fade9() {
         
-        if output.volume != 1 {
-            for i in 0...49 {
+        if output.volume != 1.5 {
+            for i in 0...74 {
                 delay(i*0.01){
                     self.linearFade9()
-                    //print(self.output.volume)
                 }
             }
         }
@@ -459,13 +466,13 @@ class ViewController : UIViewController {
     
     func linearFade9(){
         
-        //fades treble up
+        //fades mster up
         
-        if output.volume < 1 {
+        if output.volume < 1.5 {
             output.volume += 0.02}
         
-        if output.volume > 1 {
-            output.volume = 1}
+        if output.volume > 1.5 {
+            output.volume = 1.5}
     }
     
     
@@ -601,6 +608,17 @@ class ViewController : UIViewController {
         loopm1()
         loopt1()
     
+    }
+    
+    func setupPlot() {
+        let plot = AKNodeOutputPlot(output, frame: audioOutputPlot.bounds)
+        plot.plotType = .buffer
+        plot.shouldFill = true
+        plot.shouldMirror = true
+        plot.gain = 2
+        plot.backgroundColor = UIColor.clear
+        plot.color = UIColor.black
+        audioOutputPlot.addSubview(plot)
     }
     
     

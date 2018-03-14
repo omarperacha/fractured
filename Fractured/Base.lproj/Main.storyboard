@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -25,14 +26,14 @@
                         <viewControllerLayoutGuide type="bottom" id="mmA-th-FMI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JoE-0E-BNj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DSC_6744.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-Vb-3Lg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="778"/>
                             </imageView>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-UK-6FN">
-                                <rect key="frame" x="137" y="488" width="46" height="30"/>
+                                <rect key="frame" x="164.66666666666666" y="698" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Dyq-0e-O1f"/>
@@ -47,7 +48,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Omar Peracha is a British composer, peformer, choral director &amp; software developer." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyc-AU-hpr">
-                                <rect key="frame" x="18" y="100" width="285" height="66"/>
+                                <rect key="frame" x="45.666666666666657" y="203" width="285" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="8yq-YY-e0a"/>
                                     <constraint firstAttribute="width" constant="285" id="KhC-Qh-9HC"/>
@@ -57,13 +58,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ashleigh Thompson is a visual artist working and living in London." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb4-GD-Jgu">
-                                <rect key="frame" x="17.5" y="286" width="285" height="44"/>
+                                <rect key="frame" x="45" y="389" width="285" height="44"/>
                                 <fontDescription key="fontDescription" name="Lora-Italic" family="Lora" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n4-Qz-0Vz">
-                                <rect key="frame" x="25" y="186" width="270" height="30"/>
+                                <rect key="frame" x="52.666666666666657" y="289" width="270" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="51S-Sl-IUQ"/>
                                     <constraint firstAttribute="height" constant="30" id="yrx-D4-48i"/>
@@ -84,7 +85,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-6F-O7W">
-                                <rect key="frame" x="25" y="350" width="270" height="30"/>
+                                <rect key="frame" x="52.666666666666657" y="453" width="270" height="30"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="www.ashleighmaythompson.com">
@@ -107,7 +108,6 @@
                             <constraint firstItem="mb4-GD-Jgu" firstAttribute="width" secondItem="lyc-AU-hpr" secondAttribute="width" id="4yY-vd-ubR"/>
                             <constraint firstItem="mb4-GD-Jgu" firstAttribute="top" secondItem="8n4-Qz-0Vz" secondAttribute="bottom" constant="70" id="6HK-a8-mtC"/>
                             <constraint firstItem="8n4-Qz-0Vz" firstAttribute="centerX" secondItem="L5K-Vb-3Lg" secondAttribute="centerX" id="88w-pg-zBS"/>
-                            <constraint firstItem="L5K-Vb-3Lg" firstAttribute="top" secondItem="lyc-AU-hpr" secondAttribute="top" constant="-100" id="ClM-gI-CgZ"/>
                             <constraint firstItem="8n4-Qz-0Vz" firstAttribute="top" secondItem="lyc-AU-hpr" secondAttribute="bottom" constant="20" id="Foe-HY-K5I"/>
                             <constraint firstItem="yW5-6F-O7W" firstAttribute="width" secondItem="8n4-Qz-0Vz" secondAttribute="width" id="HaF-8I-cBe"/>
                             <constraint firstItem="mb4-GD-Jgu" firstAttribute="centerX" secondItem="L5K-Vb-3Lg" secondAttribute="centerX" id="I9F-Gj-Y8b"/>
@@ -120,6 +120,7 @@
                             <constraint firstItem="yW5-6F-O7W" firstAttribute="centerX" secondItem="L5K-Vb-3Lg" secondAttribute="centerX" id="kQG-w5-uFG"/>
                             <constraint firstItem="g3m-UK-6FN" firstAttribute="centerX" secondItem="JoE-0E-BNj" secondAttribute="centerX" id="qcH-VP-7jV"/>
                             <constraint firstItem="yW5-6F-O7W" firstAttribute="top" secondItem="mb4-GD-Jgu" secondAttribute="bottom" constant="20" id="xES-cz-DgD"/>
+                            <constraint firstItem="mb4-GD-Jgu" firstAttribute="top" secondItem="L5K-Vb-3Lg" secondAttribute="centerY" id="y5y-4Y-AOK"/>
                             <constraint firstItem="L5K-Vb-3Lg" firstAttribute="top" secondItem="JoE-0E-BNj" secondAttribute="top" id="zzC-SA-f3V"/>
                         </constraints>
                     </view>
@@ -142,17 +143,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DSC_6744.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OaX-Ie-RsY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
                             </imageView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3Z-BI-o3J">
-                                <rect key="frame" x="40" y="260.5" width="240" height="240"/>
+                                <rect key="frame" x="67.666666666666686" y="437" width="240" height="240"/>
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbG-f5-Cm3">
-                                        <rect key="frame" x="108" y="108" width="24" height="24"/>
+                                        <rect key="frame" x="107.99999999999999" y="108" width="24.000000000000014" height="24"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tbG-f5-Cm3" secondAttribute="height" multiplier="1:1" id="EQJ-AN-cf7"/>
@@ -172,14 +173,14 @@
                                 </constraints>
                             </view>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-rA-tov">
-                                <rect key="frame" x="0.0" y="0.0" width="24" height="380.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="wiI-rb-2rS"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drag the white dot to interact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1a-YD-sOC">
-                                <rect key="frame" x="40.5" y="503" width="240" height="25"/>
+                                <rect key="frame" x="68" y="680" width="240" height="25"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.88377568493150682" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="xx5-2t-aea"/>
@@ -188,8 +189,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTT-sF-qBU" userLabel="about The Artists">
-                                <rect key="frame" x="40" y="93.5" width="108" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTT-sF-qBU" userLabel="about The Artists">
+                                <rect key="frame" x="67.666666666666671" y="137" width="108.00000000000001" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="0.88" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="QIE-Gx-ukS"/>
@@ -213,14 +214,14 @@ The Artists</string>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opO-DA-Yru">
-                                <rect key="frame" x="136" y="0.0" width="35" height="93.5"/>
+                                <rect key="frame" x="136" y="0.0" width="35" height="137"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="Yw0-ZO-yqr"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-38-IqF" userLabel="about The Artists">
-                                <rect key="frame" x="172" y="93" width="108" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-38-IqF" userLabel="about The Artists">
+                                <rect key="frame" x="199.66666666666666" y="137" width="107.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HlD-gA-gNm"/>
@@ -259,22 +260,32 @@ Fractured</string>
                                     <segue destination="gp2-Hi-khL" kind="presentation" animates="NO" id="LPQ-qA-GkW"/>
                                 </connections>
                             </button>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5da-mg-qx0" customClass="EZAudioPlot">
+                                <rect key="frame" x="0.0" y="257" width="375" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7YH-zJ-pRC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BVl-P7-RmJ"/>
                             <constraint firstItem="i3Z-BI-o3J" firstAttribute="centerY" secondItem="f2b-rA-tov" secondAttribute="bottom" id="HLH-UG-LEM"/>
+                            <constraint firstItem="i3Z-BI-o3J" firstAttribute="top" secondItem="5da-mg-qx0" secondAttribute="bottom" constant="52" id="Ime-nL-VUW"/>
                             <constraint firstItem="Cve-38-IqF" firstAttribute="top" secondItem="opO-DA-Yru" secondAttribute="bottom" id="Jrf-jH-W6h"/>
                             <constraint firstItem="Cve-38-IqF" firstAttribute="trailing" secondItem="i3Z-BI-o3J" secondAttribute="trailing" id="RZ8-Kb-qne"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="opO-DA-Yru" secondAttribute="trailing" constant="-171" id="VPw-pp-tIH"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="f2b-rA-tov" secondAttribute="leading" id="WfL-kl-xVE"/>
                             <constraint firstItem="f1a-YD-sOC" firstAttribute="centerX" secondItem="OaX-Ie-RsY" secondAttribute="centerX" id="Y2o-6P-xWX"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="opO-DA-Yru" secondAttribute="top" id="YZn-GQ-8Kj"/>
-                            <constraint firstItem="OaX-Ie-RsY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="aIW-88-1RZ"/>
+                            <constraint firstItem="5da-mg-qx0" firstAttribute="leading" secondItem="OaX-Ie-RsY" secondAttribute="leading" id="Zx9-lB-8Qy"/>
+                            <constraint firstItem="OaX-Ie-RsY" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="20" symbolic="YES" id="aIW-88-1RZ"/>
                             <constraint firstItem="f1a-YD-sOC" firstAttribute="width" secondItem="i3Z-BI-o3J" secondAttribute="width" id="bGb-aD-XPL"/>
                             <constraint firstItem="i3Z-BI-o3J" firstAttribute="leading" secondItem="dTT-sF-qBU" secondAttribute="leading" id="d7R-vo-9ga"/>
                             <constraint firstItem="opO-DA-Yru" firstAttribute="height" secondItem="OaX-Ie-RsY" secondAttribute="height" multiplier="0.165" id="esX-EC-ECV"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="top" secondItem="f2b-rA-tov" secondAttribute="top" id="q0Y-sc-cyv"/>
+                            <constraint firstItem="5da-mg-qx0" firstAttribute="width" secondItem="OaX-Ie-RsY" secondAttribute="width" id="qDV-Cd-Uef"/>
                             <constraint firstItem="i3Z-BI-o3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYb-SE-O2K"/>
                             <constraint firstItem="f2b-rA-tov" firstAttribute="height" secondItem="OaX-Ie-RsY" secondAttribute="height" multiplier="0.67" id="x21-WE-s8O"/>
                             <constraint firstItem="OaX-Ie-RsY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xCW-bK-Rcd"/>
@@ -286,6 +297,7 @@ Fractured</string>
                     <connections>
                         <outlet property="aboutA" destination="dTT-sF-qBU" id="uOy-ID-eUh"/>
                         <outlet property="aboutF" destination="Cve-38-IqF" id="Ro2-YN-9gZ"/>
+                        <outlet property="audioOutputPlot" destination="5da-mg-qx0" id="Lpo-Vz-v8v"/>
                         <outlet property="myLabel" destination="f1a-YD-sOC" id="0ce-GT-Pln"/>
                         <outlet property="xyView" destination="i3Z-BI-o3J" id="gMz-lX-HzJ"/>
                     </connections>
@@ -308,14 +320,14 @@ Fractured</string>
                         <viewControllerLayoutGuide type="bottom" id="ElC-ri-drR"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="VJf-8B-EQY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DSC_6744.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vir-l2-DeU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="778"/>
                             </imageView>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-NE-dpB">
-                                <rect key="frame" x="137" y="488" width="46" height="30"/>
+                                <rect key="frame" x="164.66666666666666" y="698" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="8X8-7f-ZPW"/>
@@ -330,7 +342,7 @@ Fractured</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uup-m6-Hi2">
-                                <rect key="frame" x="17.5" y="100" width="285" height="210"/>
+                                <rect key="frame" x="45" y="179.33333333333337" width="285" height="209.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="ob0-oa-a4Z"/>
                                 </constraints>
@@ -340,7 +352,7 @@ Fractured</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2w0-ii-qxR">
-                                <rect key="frame" x="25" y="330" width="270" height="30"/>
+                                <rect key="frame" x="52.666666666666657" y="409" width="270" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="Fag-fM-ba8"/>
                                     <constraint firstAttribute="height" constant="30" id="Vue-6K-LMh"/>
@@ -367,7 +379,7 @@ Fractured</string>
                             <constraint firstItem="ElC-ri-drR" firstAttribute="top" secondItem="XhY-NE-dpB" secondAttribute="bottom" constant="50" id="OfY-ha-pVM"/>
                             <constraint firstItem="Uup-m6-Hi2" firstAttribute="centerX" secondItem="vir-l2-DeU" secondAttribute="centerX" id="SY7-XW-hBi"/>
                             <constraint firstItem="vir-l2-DeU" firstAttribute="leading" secondItem="VJf-8B-EQY" secondAttribute="leading" id="Wj5-8F-WVm"/>
-                            <constraint firstItem="vir-l2-DeU" firstAttribute="top" secondItem="Uup-m6-Hi2" secondAttribute="top" constant="-100" id="X4S-f7-c8n"/>
+                            <constraint firstItem="vir-l2-DeU" firstAttribute="centerY" secondItem="Uup-m6-Hi2" secondAttribute="bottom" id="X4S-f7-c8n"/>
                             <constraint firstItem="2w0-ii-qxR" firstAttribute="centerX" secondItem="vir-l2-DeU" secondAttribute="centerX" id="XCp-1m-I5d"/>
                             <constraint firstItem="vir-l2-DeU" firstAttribute="bottom" secondItem="ElC-ri-drR" secondAttribute="top" id="me0-gl-8px"/>
                             <constraint firstItem="vir-l2-DeU" firstAttribute="top" secondItem="VJf-8B-EQY" secondAttribute="top" id="pWc-js-Saw"/>
